@@ -1,0 +1,21 @@
+# router images (licensed, large)
+*.qcow2
+*.iol
+*.bin
+*.img
+*.tar
+*.tar.gz
+# containerlab generated lab folders (contain keys and certificates)
+clab-*/
+# secrets
+.env
+*.pem
+*.key
+# python
+__pycache__/
+.venv/
+*.vmdk
+*.vdi
+*.ova
+*.iso
+*.gns3project
