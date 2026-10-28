@@ -1,0 +1,8 @@
+2026-10-28 05:02:36 auth.err sshd[325]: error: Bind to port 22 on 0.0.0.0 failed: Address in use.
+2026-10-28 05:02:36 auth.err sshd[325]: error: Bind to port 22 on :: failed: Address in use.
+2026-10-28 05:02:36 auth.crit sshd[325]: fatal: Cannot bind any address.
+2026-10-28 05:02:37 syslog.info : [origin software="rsyslogd" swVersion="8.2604.0" x-pid="315" x-info="https://www.rsyslog.com"] start
+2026-10-28 05:04:42 local7.warning 122: .Oct 28 05:04:41.204: %SYS-4-LOGGINGHOST_STARTSTOP: Logging to host 192.168.100.11 port 514 protocol UDP started - reconnection
+2026-10-28 05:05:04 local7.notice 123: .Oct 28 05:05:03.809: %SYS-5-CONFIG_I: Configured from console by console
+2026-10-28 05:06:14 local7.warning 124: .Oct 28 05:06:13.093: %SYS-4-INSECURE_CONFIG: Module: NTP - Command: ntp server 192.168.100.2 <cr> - Reason: NTP configuration lacks authentication, allowing potential time manipulation attacks - Remediation: Configure a valid auth key and make it trusted using the command - ntp trusted-key
+2026-10-28 05:19:28 local7.info 125: Oct 28 05:19:27.750: %PKI-6-AUTHORITATIVE_CLOCK: The system clock has been set.

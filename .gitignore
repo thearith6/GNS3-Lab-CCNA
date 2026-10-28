@@ -1,21 +1,144 @@
-# router images (licensed, large)
-*.qcow2
-*.iol
+# ==============================================================================
+# .gitignore for Networking / GNS3 Lab Repository
+# Protects against committing copyrighted vendor images, licenses, large disks,
+# and volatile GNS3 runtime states while preserving CCNA documentation & configs.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Non-publishable root folders and reference files (Publish CCNA/ only)
+# ------------------------------------------------------------------------------
+# Reference PDFs and text files in root
+/*.pdf
+/*.txt
+
+# Root-level supporting folders (templates, helper scripts, local archives)
+/scripts/
+/templates/
+/Others/
+Others/
+
+# ------------------------------------------------------------------------------
+# 2. Cisco & Vendor OS Images (Copyrighted / Proprietary)
+# ------------------------------------------------------------------------------
+# Cisco IOS / Dynamips image binaries
 *.bin
-*.img
-*.tar
-*.tar.gz
-# containerlab generated lab folders (contain keys and certificates)
-clab-*/
-# secrets
-.env
-*.pem
-*.key
-# python
-__pycache__/
-.venv/
+*.image
+*.md5
+c7200*
+c3725*
+c3745*
+c2691*
+c3600*
+c1700*
+
+# Cisco IOU / IOL (IOS on Linux) binaries & hashes
+*.iol
+i86bi_linux*
+x86_64_crb_linux*
+*.md5sum
+
+# Cisco Virtualized Appliances (CSR1000v, C8000v, Nexus, ASA, XRv, SD-WAN, etc.)
+csr1000v*
+c8000v*
+cat8000v*
+nxos*
+nxosv*
+n9kv*
+asav*
+xrv*
+xrv9k*
+viptela*
+vedge*
+vmanage*
+vbond*
+vsmart*
+ftdv*
+fmc*
+wlc*
+vwlc*
+
+# Virtual machine & hypervisor disk images (large, licensed)
+*.qcow2
+*.qcow2.gz
+*.qcow
 *.vmdk
 *.vdi
+*.vhdx
+*.vhd
 *.ova
+*.ovf
 *.iso
+*.img
+*.rom
+*.ghost
+
+# Compressed archives & container images
+*.tar
+*.tar.gz
+*.tgz
+
+# Exported GNS3 portable projects (frequently bundle licensed OS images)
 *.gns3project
+
+# ------------------------------------------------------------------------------
+# 3. Cisco Licenses & Secrets
+# ------------------------------------------------------------------------------
+iourc
+iourc.txt
+*.lic
+license*
+*.key
+*.pem
+*.crt
+*.cer
+.env
+.env.*
+
+# ------------------------------------------------------------------------------
+# 4. GNS3 Ephemeral Runtime & Volatile States (inside project-files)
+# ------------------------------------------------------------------------------
+# Packet captures
+captures/
+*.pcap
+*.pcapng
+*.cap
+
+# Dynamips / IOU runtime NVRAM and internal network maps
+nvram_*
+*.nvram
+NETMAP
+*.dat-*
+
+# Runtime logs, locks, and sockets
+*.log
+*.pid
+*.lock
+*.sock
+*.socket
+
+# QEMU / Docker runtime storage inside projects
+project-files/**/images/
+project-files/**/qemu/*/hda_disk*
+project-files/**/qemu/*/hdb_disk*
+project-files/**/qemu/*/overlay*
+
+# Containerlab generated lab directories
+clab-*/
+
+# ------------------------------------------------------------------------------
+# 5. Python, Environment, & OS Files
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
