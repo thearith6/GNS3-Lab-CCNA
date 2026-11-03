@@ -18,7 +18,44 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "5e207f6d-f059-4b67-80bc-36d64b642673",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"180\"><rect width=\"440\" height=\"180\" rx=\"14\" ry=\"14\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#475569\" /></svg>",
+                "x": -220,
+                "y": -150,
+                "z": 0
+            },
+            {
+                "drawing_id": "6be47b78-2cee-4128-a8f7-b91b09785d4d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#334155\" fill-opacity=\"1.0\">IP Underlay (OSPF Spine-Leaf)</text></svg>",
+                "x": -90,
+                "y": -135,
+                "z": 2
+            },
+            {
+                "drawing_id": "e841dc20-7c08-4a8b-a3ef-0d3fafbaf46a",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"120\"><rect width=\"440\" height=\"120\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" stroke-dasharray=\"5,5\" /></svg>",
+                "x": -220,
+                "y": 50,
+                "z": 0
+            },
+            {
+                "drawing_id": "6d77d802-ec93-4673-a782-c20c10bcc366",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">VXLAN Overlay (EVPN / L2 VNI)</text></svg>",
+                "x": -100,
+                "y": 60,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -224,8 +261,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 225,
-                "y": 150,
+                "x": 200,
+                "y": 120,
                 "z": 1
             },
             {
@@ -309,8 +346,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -225,
-                "y": 150,
+                "x": -200,
+                "y": 120,
                 "z": 1
             },
             {
@@ -347,8 +384,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -75,
-                "y": 150,
+                "x": -100,
+                "y": 120,
                 "z": 1
             },
             {
@@ -385,8 +422,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 75,
-                "y": 150,
+                "x": 100,
+                "y": 120,
                 "z": 1
             },
             {
@@ -433,7 +470,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 0,
-                "y": -150,
+                "y": -120,
                 "z": 1
             },
             {

@@ -18,7 +18,98 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "723f18e0-d341-4287-ab15-6350f0b2c884",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"240\" height=\"180\"><rect width=\"240\" height=\"180\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -290,
+                "y": -90,
+                "z": 0
+            },
+            {
+                "drawing_id": "34154256-26ed-4a6f-a369-f6738f2db863",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">Customer (Dual-WAN)</text></svg>",
+                "x": -280,
+                "y": -80,
+                "z": 2
+            },
+            {
+                "drawing_id": "408a15bc-32fe-4398-a5c0-dd1fb296d010",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"120\"><rect width=\"150\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 0,
+                "y": -135,
+                "z": 0
+            },
+            {
+                "drawing_id": "b830a92e-1124-4695-b1b2-fb6dbaf04417",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">ISP-A (Primary)</text></svg>",
+                "x": 10,
+                "y": -125,
+                "z": 2
+            },
+            {
+                "drawing_id": "0bca078a-0fe7-43a8-9fd2-c1f8503f8360",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"120\"><rect width=\"150\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#fffbeb\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#d97706\" /></svg>",
+                "x": 0,
+                "y": 15,
+                "z": 0
+            },
+            {
+                "drawing_id": "9b749305-713c-4c2e-b3c4-bb1267460cc4",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#d97706\" fill-opacity=\"1.0\">ISP-B (Backup)</text></svg>",
+                "x": 10,
+                "y": 25,
+                "z": 2
+            },
+            {
+                "drawing_id": "e1e01bea-832a-45f0-9da3-af3b3a4f5aeb",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"160\"><rect width=\"150\" height=\"160\" rx=\"12\" ry=\"12\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#64748b\" /></svg>",
+                "x": 190,
+                "y": -80,
+                "z": 0
+            },
+            {
+                "drawing_id": "65d3eb0b-2abe-42b8-8ba1-3e9c9f20bb21",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">Internet Core</text></svg>",
+                "x": 200,
+                "y": -70,
+                "z": 2
+            },
+            {
+                "drawing_id": "53f36ccb-0d05-4bb4-806f-6e2831ec12d8",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">PPPoE 1 (Primary)</text></svg>",
+                "x": -45,
+                "y": -55,
+                "z": 2
+            },
+            {
+                "drawing_id": "b2afaa9b-d229-44dd-8e3c-a7cce71c3f84",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#b45309\" fill-opacity=\"1.0\">PPPoE 2 (Backup)</text></svg>",
+                "x": -45,
+                "y": 45,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -205,7 +296,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 225,
+                "x": 240,
                 "y": 0,
                 "z": 1
             },
@@ -243,7 +334,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -225,
+                "x": -250,
                 "y": 0,
                 "z": 1
             },
@@ -384,7 +475,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -75,
+                "x": -100,
                 "y": 0,
                 "z": 1
             }

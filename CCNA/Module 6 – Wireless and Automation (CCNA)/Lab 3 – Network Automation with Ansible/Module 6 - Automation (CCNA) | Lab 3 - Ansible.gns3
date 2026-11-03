@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "a00f872c-def2-43d5-8c8e-b0be104b5ef1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"420\" height=\"340\"><rect width=\"420\" height=\"340\" rx=\"16\" ry=\"16\" fill=\"#f0f7ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" stroke-dasharray=\"5,5\" /></svg>",
+                "x": -210,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "drawing_id": "b1640305-bf6f-4503-b5c2-e0cbc2ac6cde",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1f3a93\" fill-opacity=\"1.0\">192.168.100.0/24</text></svg>",
+                "x": -70,
+                "y": -105,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -110,7 +129,7 @@
                 "aux": null,
                 "aux_type": null,
                 "compute_id": "local",
-                "console": 5021,
+                "console": 5000,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -130,7 +149,7 @@
                 "port_name_format": "Ethernet{segment0}/{port0}",
                 "port_segment_size": 4,
                 "properties": {
-                    "application_id": 9,
+                    "application_id": 7,
                     "builtin": false,
                     "compute_id": "local",
                     "created_at": "2026-09-10T08:38:57",
@@ -157,7 +176,7 @@
                 "aux": null,
                 "aux_type": null,
                 "compute_id": "local",
-                "console": 5022,
+                "console": 5001,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -215,7 +234,7 @@
                 "port_name_format": "Ethernet{segment0}/{port0}",
                 "port_segment_size": 4,
                 "properties": {
-                    "application_id": 10,
+                    "application_id": 8,
                     "builtin": false,
                     "compute_id": "local",
                     "created_at": "2026-09-10T08:38:57",

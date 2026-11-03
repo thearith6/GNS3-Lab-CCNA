@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 6 - BGP (CCNP) | Lab 3 - BGP Route Reflectors.gns3`](./Module%206%20-%20BGP%20%28CCNP%29%20%7C%20Lab%203%20-%20BGP%20Route%20Reflectors.gns3)
 
-![topology](topology.png)
+![topo](image_2.png)
 
 ## Scenario
 Starting from the Lab 2 configuration, remove the iBGP neighbor relationship between R3 and R4.
@@ -67,7 +67,10 @@ neighbor 4.4.4.4 route-reflector-client
 
 Task 3 - Verify that R3 learns the network of R5 through the route reflector.
 
+![Task-3](image.png)
+
 ## Note
-1. Verification commands: `Show ip bgp 192.168.5.0`
-2. The route should show the Originator 4.4.4.4 and the Cluster list 2.2.2.2.
-3. On R2, remove the route-reflector-client configuration for both neighbors. Check the BGP table of R3. — iBGP routes are no longer passed from one iBGP neighbor to another. R3 no longer learns 192.168.5.0/24. Note: Fix it by configuring route-reflector-client again for both neighbors.
+1. Verification commands: `Show ip bgp 192.168.5.0` - The route should show the Originator 4.4.4.4 and the Cluster list 2.2.2.2.
+2. On R2, remove the route-reflector-client configuration for both neighbors. Check the BGP table of R3. — iBGP routes are no longer passed from one iBGP neighbor to another. R3 no longer learns 192.168.5.0/24. Note: Fix it by configuring route-reflector-client again for both neighbors.
+
+![Breakit-1](image_1.png)

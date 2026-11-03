@@ -18,7 +18,62 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "35707bdc-c5f9-4a52-93c1-5a1fbf3403c0",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"480\" height=\"120\"><rect width=\"480\" height=\"120\" rx=\"14\" ry=\"14\" fill=\"#faf5ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#7c3aed\" /></svg>",
+                "x": -240,
+                "y": -235,
+                "z": 0
+            },
+            {
+                "drawing_id": "78e024cd-3c68-4544-a9e0-41b0408a0067",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"240\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#7c3aed\" fill-opacity=\"1.0\">SD-WAN Controllers (vManage, vBond, vSmart)</text></svg>",
+                "x": -120,
+                "y": -225,
+                "z": 2
+            },
+            {
+                "drawing_id": "213ff255-f818-4497-832d-3f74aea1be88",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"480\" height=\"100\"><rect width=\"480\" height=\"100\" rx=\"12\" ry=\"12\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#475569\" /></svg>",
+                "x": -240,
+                "y": -100,
+                "z": 0
+            },
+            {
+                "drawing_id": "79e15b95-4a35-4ea8-8244-2adea5bef558",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#334155\" fill-opacity=\"1.0\">Dual WAN Transport: Internet & MPLS</text></svg>",
+                "x": -100,
+                "y": -90,
+                "z": 2
+            },
+            {
+                "drawing_id": "18c7fded-caa7-4d6b-8548-ea9402bc68a0",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"480\" height=\"180\"><rect width=\"480\" height=\"180\" rx=\"14\" ry=\"14\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -240,
+                "y": 30,
+                "z": 0
+            },
+            {
+                "drawing_id": "8b689ec3-5995-4148-9000-34cd70b1961e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"220\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">Data Plane WAN Edges (IPsec / BFD Fabric)</text></svg>",
+                "x": -110,
+                "y": 40,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -421,7 +476,7 @@
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
                 "x": 0,
-                "y": 225,
+                "y": 160,
                 "z": 1
             },
             {
@@ -468,7 +523,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": -150,
-                "y": 75,
+                "y": 60,
                 "z": 1
             },
             {
@@ -505,8 +560,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -225,
-                "y": 225,
+                "x": -220,
+                "y": 230,
                 "z": 1
             },
             {
@@ -553,7 +608,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 150,
-                "y": -225,
+                "y": -200,
                 "z": 1
             },
             {
@@ -591,7 +646,7 @@
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
                 "x": 150,
-                "y": 225,
+                "y": 160,
                 "z": 1
             },
             {
@@ -638,7 +693,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 0,
-                "y": 75,
+                "y": 60,
                 "z": 1
             },
             {
@@ -685,7 +740,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 0,
-                "y": -225,
+                "y": -200,
                 "z": 1
             },
             {
@@ -731,7 +786,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -225,
+                "x": -220,
                 "y": 150,
                 "z": 1
             },
@@ -824,7 +879,7 @@
                 "tags": [],
                 "template_id": "92a43283-9c7e-5a68-9695-1f05a2e8dd05",
                 "width": 60,
-                "x": -75,
+                "x": -100,
                 "y": -75,
                 "z": 1
             },
@@ -917,7 +972,7 @@
                 "tags": [],
                 "template_id": "92a43283-9c7e-5a68-9695-1f05a2e8dd05",
                 "width": 60,
-                "x": 75,
+                "x": 100,
                 "y": -75,
                 "z": 1
             },
@@ -965,7 +1020,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": -150,
-                "y": -225,
+                "y": -200,
                 "z": 1
             },
             {
@@ -1012,7 +1067,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 150,
-                "y": 75,
+                "y": 60,
                 "z": 1
             }
         ]

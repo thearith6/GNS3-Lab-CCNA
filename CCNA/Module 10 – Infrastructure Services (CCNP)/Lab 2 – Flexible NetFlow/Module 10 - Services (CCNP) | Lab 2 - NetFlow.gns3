@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "d5c89f40-23a6-4a95-a7a7-0277ff171a9f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"400\" height=\"200\"><rect width=\"400\" height=\"200\" rx=\"14\" ry=\"14\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#475569\" /></svg>",
+                "x": -200,
+                "y": -100,
+                "z": 0
+            },
+            {
+                "drawing_id": "7e497ac4-d9e5-4c6c-9324-355fe78fb7d3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#334155\" fill-opacity=\"1.0\">NetFlow Measurement Domain</text></svg>",
+                "x": -100,
+                "y": -85,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},

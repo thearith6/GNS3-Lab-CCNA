@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 4 - Layer 2 Security (CCNA) | Lab 1 - Port Security.gns3`](./Module%204%20-%20Layer%202%20Security%20%28CCNA%29%20%7C%20Lab%201%20-%20Port%20Security.gns3)
 
-![topology](topology.png)
+![topo](image_2.png)
 
 ## Scenario
 On SW1 E 0/1, enable port security so that only one MAC address can use the port. Learn the MAC address dynamically and keep it in the running configuration. When a violation occurs, the port must drop the frames and log the event without shutting down.
@@ -14,11 +14,11 @@ On SW1 E 0/1, enable port security so that only one MAC address can use the port
   - `PC1` Ethernet0: `192.168.10.11` (GW: 192.168.10.1)
   - `PC2` Ethernet0: `192.168.10.12` (GW: 192.168.10.1)
 
-Task 1 - On SW1 E 0/1, enable port security so that only one MAC address can use the port.
+Task 1 - On SW1 E0/1, enable port security so that only one MAC address can use the port.
   - Learn the MAC address dynamically and keep it in the running configuration.
   - When a violation occurs, the port must drop the frames and log the event without shutting down.
 
-Task 2 - On SW1 E 0/2, allow only the MAC address of PC2 (0050.7966.6802), configured statically.
+Task 2 - On SW1 E0/2, allow only the MAC address of PC2 (0050.7966.6801), configured statically.
   - When a violation occurs, the port must shut down.
 
 Task 3 - Verify the port security configuration.
@@ -36,7 +36,7 @@ switchport port-security mac-address sticky
 switchport port-security violation restrict
 ```
 
-Task 2 - On SW1 E 0/2, allow only the MAC address of PC2 (0050.7966.6802), configured statically.
+Task 2 - On SW1 E 0/2, allow only the MAC address of PC2 (0050.7966.6801), configured statically.
 
 **SW1:**
 ```cisco
@@ -49,8 +49,18 @@ switchport port-security violation shutdown
 
 Task 3 - Verify the port security configuration.
 
+![Task-3](image.png)
+
 ## Note
 1. Verification commands: `Show port-security`
-2. E 0/1 and E 0/2 should be listed with a maximum of 1 address each. Show port-security interface ethernet0/1
-3. The port status should be Secure-up and the violation mode Restrict.
-4. Connect ATK to SW1 E 0/2 in place of PC2. Check the port. SW1 — The port is err-disabled. The MAC address of ATK does not match the allowed address. Note: Recover the port with the commands below after removing ATK. interface Ethernet0/2 shutdown no shutdown
+ - E0/1 and E0/2 listed with a maximum of 1 address each. 
+2. Show port-security interface ethernet0/1
+ - The port status is Secure-up and the violation mode Restrict.
+
+![Verification-1](image_1.png)
+
+3. Connect ATK to SW1 E0/2 in place of PC2. Check the port. SW1 — The port is err-disabled. The MAC address of ATK does not match the allowed address. Note: Recover the port with the commands below after removing ATK. interface Ethernet0/2 shutdown no shutdown, or errdisable recovery cause psecure-violation.
+
+![Breakit-1](image_3.png)
+
+![Breakit-1-fix](image_4.png)

@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 2 - IP Connectivity (CCNA) | Lab 8 - OSPF Network Types and Cost Tuning.gns3`](./Module%202%20-%20IP%20Connectivity%20%28CCNA%29%20%7C%20Lab%208%20-%20OSPF%20Network%20Types%20and%20Cost%20Tuning.gns3)
 
-![topology](topology.png)
+![topo](image_3.png)
 
 ## Scenario
 Configure OSPF area 0 on R1, R2 and R3 for all links and Loopback 0. Hard-code the router IDs to 1.1.1.1, 2.2.2.2 and 3.3.3.3.

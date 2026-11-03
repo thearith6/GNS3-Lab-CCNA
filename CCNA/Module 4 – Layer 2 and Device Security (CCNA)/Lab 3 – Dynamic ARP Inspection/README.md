@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 4 - Layer 2 Security (CCNA) | Lab 3 - Dynamic ARP Inspection.gns3`](./Module%204%20-%20Layer%202%20Security%20%28CCNA%29%20%7C%20Lab%203%20-%20Dynamic%20ARP%20Inspection.gns3)
 
-![topology](topology.png)
+![topo](image_4.png)
 
 ## Scenario
 Starting from the Lab 2 configuration, enable Dynamic ARP Inspection on SW1 for VLAN 1 and trust the uplink to R1.
@@ -29,7 +29,7 @@ Task 1 - Starting from the Lab 2 configuration, enable Dynamic ARP Inspection on
 **SW1:**
 ```cisco
 ip arp inspection vlan 1
-interface Ethernet0/0
+interface G0/0
 ip arp inspection trust
 ```
 
@@ -44,13 +44,32 @@ Task 3 - Limit the ARP rate on the host ports to 15 packets per second and verif
 
 **SW1:**
 ```cisco
-interface range Ethernet0/1 - 3
+interface range G0/1 - 3
 ip arp inspection limit rate 15
 ```
 
 ## Note
-1. Verification commands: `Show ip arp inspection vlan 1`
-2. DAI should be enabled and active for VLAN 1. Show ip arp inspection statistics
-3. ARP packets from PC1 and PC2 should be forwarded because they match the DHCP snooping binding table.
-4. Configure the static address 192.168.10.66/24 on ATK without using DHCP and ping R1. — The ARP packets from ATK are dropped because ATK is not in the DHCP snooping binding table. A DHCP_SNOOPING_DENY message is logged.
-5. On SW1, remove the trust from E 0/0. Clear the ARP table on PC1 and ping R1. SW1 — The ARP replies from R1 are dropped, because R1 is not in the binding table. PC1 cannot resolve the gateway. Note: Fix it with ip arp inspection trust.
+1. DAI Check Giaddr against DHCP snooping bidning table, the `validate src-mac dst-mac ip` check Giaddr against the sender ethernet header src-mac dst-mac and ip. For SERVER, no dhcp snooping table -> use ACL.
+2. DHCP DORA is not an ARP -> no entry in DHCP snooping binding table to check, no problem!
+
+![Task-1](image_5.png)
+
+3. Verification commands: `Show ip arp inspection vlan 1` - DAI should be enabled and active for VLAN 1. 
+
+![Verification-1](image_1.png)
+
+4. Show ip arp inspection statistics - ARP packets from PC1 and PC2 should be forwarded because they match the DHCP snooping binding table.
+
+![Verification-2](image.png)
+
+5. Configure the static address 192.168.10.66/24 on ATK without using DHCP and ping R1. — The ARP packets from ATK are dropped because ATK is not in the DHCP snooping binding table. A DHCP_SNOOPING_DENY message is logged.
+
+![Breakit-1](image_2.png)
+
+6. On SW1, remove the trust from G0/0. Clear the ARP table on PC1 and ping R1. SW1 — The ARP replies from R1 are dropped, because R1 is not in the binding table. PC1 cannot resolve the gateway. Note: Fix it with ip arp inspection trust.
+
+![Breakit-2](image_3.png)
+
+Why Ping PC1 to Router on untrusted port+no entry in dhcp snooping binding -> Host unreachable
+While, Ping from router on untrusted port + no entry in dhcp snooping binding -> ... 0 of 5 succeeded?
+Because PC1 ping pass the DAI and no dst unreachable, while Router ping never pass DAI.

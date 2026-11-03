@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 6 - BGP (CCNP) | Lab 1 - eBGP Neighbors and Loopback Peering.gns3`](./Module%206%20-%20BGP%20%28CCNP%29%20%7C%20Lab%201%20-%20eBGP%20Neighbors%20and%20Loopback%20Peering.gns3)
 
-![topology](topology.png)
+![topo](image_3.png)
 
 ## Scenario
 Configure an eBGP neighbor relationship between R2 (AS 65200) and R3 (AS 65300) using the addresses of the directly connected link. Hard-code the router IDs to 2.2.2.2 and 3.3.3.3. Advertise the Loopback 1 networks in BGP.
@@ -77,9 +77,16 @@ neighbor 1.1.1.1 ebgp-multihop 2
 
 Task 3 - Verify the BGP neighbor and the BGP table on R1.
 
+![Task-3](image.png)
+
 ## Note
-1. Verification commands: `Show ip bgp summary`
-2. Neighbor 2.2.2.2 should be established and show 2 prefixes received. Show ip bgp
-3. 192.168.3.0/24 should have the AS path 65200 65300.
-4. On R1, remove ebgp-multihop from the neighbor 2.2.2.2. Check the BGP neighbor. R1 — The session no longer establishes because the loopback address of R2 is not on a directly connected network. Note: Fix it with neighbor 2.2.2.2 ebgp-multihop 2.
+1. Verification commands: 
+  - `show ip bgp summary` - Neighbor 2.2.2.2 should be established and show 2 prefixes received. 
+  - 'show ip bgp' - 192.168.3.0/24 should have the AS path 65200 65300.
+2. On R1, remove ebgp-multihop from the neighbor 2.2.2.2. Check the BGP neighbor. R1 — The session no longer establishes because the loopback address of R2 is not on a directly connected network. Note: Fix it with neighbor 2.2.2.2 ebgp-multihop 2.
+
+![Breakit-1](image_1.png)
+
 5. On R1, shut down E 0/0. Check the BGP neighbor. R1 — The BGP session stays up because the static route over E 0/1 still reaches 2.2.2.2. Note: Fix it with no shutdown.
+
+![Breakit-2](image_2.png)

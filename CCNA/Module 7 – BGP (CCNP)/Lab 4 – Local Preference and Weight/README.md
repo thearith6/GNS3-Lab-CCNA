@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 6 - BGP (CCNP) | Lab 4 - Local Preference and Weight.gns3`](./Module%206%20-%20BGP%20%28CCNP%29%20%7C%20Lab%204%20-%20Local%20Preference%20and%20Weight.gns3)
 
-![topology](topology.png)
+![topo](image_3.png)
 
 ## Scenario
 Configure eBGP between R1 (AS 65100) and R2 (AS 65200), R1 and R3 (AS 65300), R2 and R4 (AS 65400), and R3 and R4. Use the addresses of the directly connected links (R1 and R2 use the E 0/0 link). Advertise the Loopback 1 network of R1 and R4. Hard-code the router IDs to the Loopback 0 address of each router.
@@ -74,6 +74,7 @@ router bgp 65100
 neighbor 10.13.0.3 route-map PREFER-R3 in
 clear ip bgp * in
 ```
+![Task-2](image.png)
 
 Task 3 - Now R1 must use ISP-A (R2) for 198.51.100.0/24 anyway.
 
@@ -85,9 +86,20 @@ router bgp 65100
 neighbor 10.12.0.2 route-map WEIGHT-R2 in
 clear ip bgp * in
 ```
+![Task-3](image_1.png)
 
 ## Note
-1. Verification commands: `Show ip bgp 198.51.100.0`
-2. The best path should be via 10.13.0.3 with local preference 200.
-3. The best path should now be via 10.12.0.2. Weight is checked before local preference.
+
+![Note](image_5.png)
+
+1. Weight can apply directly - 'neighbor IP weight VALUE'
+2. Local-preference no per neighbor apply but can apply to all default AS - 'bgp default local-preference VALUE'
+3. Verification commands: `Show ip bgp 198.51.100.0` 
+  - The best path should be via 10.13.0.3 with local preference 200.
+  - After setting weight, the best path should now be via 10.12.0.2. Weight is checked before local preference.
+
 4. In the route-map PREFER-R3, change the local preference to 300 but do not refresh the session. Check the BGP table of R1. — The table still shows the old value. An inbound policy is only applied to the routes after a refresh. Note: Apply it with clear ip bgp 10.13.0.3 in.
+
+![Breakit-1.1](image_4.png)
+
+![Breakit-1.2](image_2.png)

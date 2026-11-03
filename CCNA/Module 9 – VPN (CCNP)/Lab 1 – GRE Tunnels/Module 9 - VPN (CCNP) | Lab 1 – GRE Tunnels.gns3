@@ -18,7 +18,71 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "91f136ba-b649-4012-9c05-e4668e9bd0bc",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"220\" height=\"160\"><rect width=\"220\" height=\"160\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -290,
+                "y": -80,
+                "z": 0
+            },
+            {
+                "drawing_id": "a9923e20-4548-4fe2-8ed4-d42dbdc11a42",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">Branch 1 (HQ)</text></svg>",
+                "x": -280,
+                "y": -70,
+                "z": 2
+            },
+            {
+                "drawing_id": "b16fe74a-3ffc-44ca-b9ef-81c6825502f2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"160\"><rect width=\"160\" height=\"160\" rx=\"12\" ry=\"12\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#64748b\" /></svg>",
+                "x": -80,
+                "y": -80,
+                "z": 0
+            },
+            {
+                "drawing_id": "14ae0fa4-2f6e-40f0-9389-2bf0942e8ce3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">Internet Core</text></svg>",
+                "x": -50,
+                "y": -70,
+                "z": 2
+            },
+            {
+                "drawing_id": "de2693e5-43d7-401c-9e68-b71de96a9a68",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"220\" height=\"160\"><rect width=\"220\" height=\"160\" rx=\"12\" ry=\"12\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 70,
+                "y": -80,
+                "z": 0
+            },
+            {
+                "drawing_id": "b9f943b1-2c3f-4792-ab4f-a812fc77f80e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">Branch 2 (Remote)</text></svg>",
+                "x": 80,
+                "y": -70,
+                "z": 2
+            },
+            {
+                "drawing_id": "f2a1392c-4a0a-47b6-9273-8752de59b3cb",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#dc2626\" fill-opacity=\"1.0\">[VPN Overlay Tunnel]</text></svg>",
+                "x": -90,
+                "y": 50,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -168,7 +232,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 225,
+                "x": 250,
                 "y": 0,
                 "z": 1
             },
@@ -206,7 +270,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -225,
+                "x": -250,
                 "y": 0,
                 "z": 1
             },
@@ -300,7 +364,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 150,
+                "x": 120,
                 "y": 0,
                 "z": 1
             },
@@ -347,7 +411,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -150,
+                "x": -120,
                 "y": 0,
                 "z": 1
             }

@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 4 - Layer 2 Security (CCNA) | Lab 5 - AAA.gns3`](./Module%204%20-%20Layer%202%20Security%20%28CCNA%29%20%7C%20Lab%205%20-%20AAA.gns3)
 
-![topology](topology.png)
+![topo](image.png)
 
 ## Scenario
 Configure R1 to use the RADIUS server 192.168.100.50 (SRV). Use the shared key RadKey123 and the standard ports 1812 and 1813. Put the server in a server group.
@@ -30,12 +30,12 @@ Task 1 - Configure R1 to use the RADIUS server 192.168.100.50 (SRV).
 
 **R1:**
 ```cisco
-radius server RAD-SRV
-address ipv4 192.168.100.50 auth-port 1812 acct-port 1813
-key RadKey123
 aaa new-model
+  radius server FreeRADIUS
+  address ipv4 192.168.100.50 auth-port 1812 acct-port 1813
+  key RadKey123
 aaa group server radius RAD-GROUP
-server name RAD-SRV
+server name FreeRADIUS
 ```
 
 Task 2 - Enable AAA for the remote logins.
@@ -56,9 +56,16 @@ Task 3 - Test the RADIUS server and verify the AAA status.
 ```cisco
 test aaa group RAD-GROUP user1 Password123 new-code
 ```
+![Task-3](image_1.png)
 
 ## Note
-1. The result should say User successfully authenticated. Show aaa servers
-2. The server 192.168.100.50 should be in the state UP.
+1. The result should say User successfully authenticated. Show aaa servers - The server 192.168.100.50 should be in the state UP.
+
+![Verification-1](image_2.png)
+
 3. On R1, change the RADIUS key to WRONG. Test the server and try an SSH login with a RADIUS user. — The server rejects the requests because the shared key does not match. The test fails and the RADIUS users cannot log in. Note: Fix it with key RadKey123.
+
+![Breakit-1](image_3.png)
+
+
 4. On R1, change the server address to 192.168.100.99. Log in through SSH with the local user backup. — The server does not answer. After the timeout the login falls back to the local database and the user backup can log in. Note: Fix it with the address 192.168.100.50.

@@ -18,7 +18,35 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "1fe9cce4-f9af-4698-86ec-e7d72c700409",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"260\"><rect width=\"440\" height=\"260\" rx=\"16\" ry=\"16\" fill=\"#faf5ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#7c3aed\" /></svg>",
+                "x": -220,
+                "y": -150,
+                "z": 0
+            },
+            {
+                "drawing_id": "73eb86ae-798f-44b3-9fe0-489f1e3825c1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#7c3aed\" fill-opacity=\"1.0\">Spanning Tree Domain</text></svg>",
+                "x": -90,
+                "y": -135,
+                "z": 2
+            },
+            {
+                "drawing_id": "ce644ac4-e3da-4c0c-a549-33f1decfea8b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#b45309\" fill-opacity=\"1.0\">[SW1 Root Bridge]</text></svg>",
+                "x": -60,
+                "y": -70,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -231,8 +259,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -180,
-                "y": -255,
+                "x": 0,
+                "y": -120,
                 "z": 1
             },
             {
@@ -269,8 +297,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 0,
-                "y": 50,
+                "x": 150,
+                "y": 160,
                 "z": 1
             },
             {
@@ -307,8 +335,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -330,
-                "y": 45,
+                "x": -150,
+                "y": 160,
                 "z": 1
             },
             {
@@ -356,8 +384,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -30,
-                "y": -105,
+                "x": 150,
+                "y": 40,
                 "z": 1
             },
             {
@@ -405,8 +433,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -330,
-                "y": -105,
+                "x": -150,
+                "y": 40,
                 "z": 1
             }
         ]

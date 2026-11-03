@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "51cdf788-9b38-4de8-9bc1-e99d1b6480b0",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"240\"><rect width=\"440\" height=\"240\" rx=\"14\" ry=\"14\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" stroke-dasharray=\"6,6\" /></svg>",
+                "x": -220,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "drawing_id": "120bcc70-7bd8-4dc1-9932-3388c4638a50",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">EIGRP Routing Domain</text></svg>",
+                "x": -100,
+                "y": -105,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -177,7 +196,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -75,
+                "x": -100,
                 "y": 75,
                 "z": 1
             },
@@ -224,7 +243,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 75,
+                "x": 100,
                 "y": 75,
                 "z": 1
             },
@@ -271,7 +290,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -75,
+                "x": -100,
                 "y": -75,
                 "z": 1
             },
@@ -318,7 +337,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 75,
+                "x": 100,
                 "y": -75,
                 "z": 1
             }

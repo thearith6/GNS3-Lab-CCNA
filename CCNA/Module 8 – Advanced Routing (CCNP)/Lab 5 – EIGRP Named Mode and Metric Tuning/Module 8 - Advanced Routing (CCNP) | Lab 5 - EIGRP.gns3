@@ -18,7 +18,53 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "aa8adaca-64e5-464e-b822-fb2e6fca2efa",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"400\" height=\"280\"><rect width=\"400\" height=\"280\" rx=\"14\" ry=\"14\" fill=\"#f0f7ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" stroke-dasharray=\"6,6\" /></svg>",
+                "x": -200,
+                "y": -130,
+                "z": 0
+            },
+            {
+                "drawing_id": "c0dd7fa3-04e9-456b-a2f5-193509777ab2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"220\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">EIGRP AS 100 (Named Mode)</text></svg>",
+                "x": -180,
+                "y": -115,
+                "z": 2
+            },
+            {
+                "drawing_id": "c57141ee-934b-41de-aedb-c59946db7dfe",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">10.1.12.0/24</text></svg>",
+                "x": -35,
+                "y": -85,
+                "z": 2
+            },
+            {
+                "drawing_id": "5c8f0496-bca0-4a87-b059-ecb28f15bcc2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">10.1.13.0/24</text></svg>",
+                "x": -115,
+                "y": 15,
+                "z": 2
+            },
+            {
+                "drawing_id": "d3af60ed-eaf0-49a3-94cb-7a27476342d9",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">10.1.23.0/24</text></svg>",
+                "x": 40,
+                "y": 15,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -149,8 +195,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -75,
-                "y": -75,
+                "x": -120,
+                "y": -70,
                 "z": 1
             },
             {
@@ -196,8 +242,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 75,
-                "y": -75,
+                "x": 120,
+                "y": -70,
                 "z": 1
             },
             {
@@ -244,7 +290,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 0,
-                "y": 75,
+                "y": 90,
                 "z": 1
             }
         ]

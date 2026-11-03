@@ -18,7 +18,53 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "e38c2727-9cc6-4852-ab54-644ef2397594",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"560\" height=\"120\"><rect width=\"560\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#fff1f2\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#e11d48\" /></svg>",
+                "x": -280,
+                "y": -115,
+                "z": 0
+            },
+            {
+                "drawing_id": "a67c74a4-d61c-4e0c-80df-93d92631482b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#e11d48\" fill-opacity=\"1.0\">VRF RED (Customer A)</text></svg>",
+                "x": -260,
+                "y": -105,
+                "z": 2
+            },
+            {
+                "drawing_id": "c6aff504-cccd-46d4-91a6-291151ebd8cd",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"560\" height=\"120\"><rect width=\"560\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": -280,
+                "y": 25,
+                "z": 0
+            },
+            {
+                "drawing_id": "e3f72362-45ec-4fbc-bd49-262aae76cc8f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">VRF BLUE (Customer B)</text></svg>",
+                "x": -260,
+                "y": 35,
+                "z": 2
+            },
+            {
+                "drawing_id": "e0a8dfa5-e221-424a-bcb0-793983b0aa4e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">Trunk / 802.1Q (R1-R2)</text></svg>",
+                "x": -60,
+                "y": -25,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -196,7 +242,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 150,
+                "x": 220,
                 "y": -75,
                 "z": 1
             },
@@ -281,7 +327,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 150,
+                "x": 220,
                 "y": 75,
                 "z": 1
             },
@@ -319,7 +365,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -150,
+                "x": -220,
                 "y": 75,
                 "z": 1
             },
@@ -357,7 +403,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -150,
+                "x": -220,
                 "y": -75,
                 "z": 1
             },

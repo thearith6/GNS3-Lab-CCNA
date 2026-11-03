@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "96af025d-a365-4342-a4cb-5e8ad636dded",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"240\"><rect width=\"440\" height=\"240\" rx=\"14\" ry=\"14\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" stroke-dasharray=\"6,6\" /></svg>",
+                "x": -220,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "drawing_id": "69e0c7fe-c230-412b-81c8-8d2ab5115e0e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">PBR Routing Domain</text></svg>",
+                "x": -100,
+                "y": -105,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},

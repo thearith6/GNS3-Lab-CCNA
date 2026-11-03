@@ -1,0 +1,404 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "created_by": "admin",
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "marker_definitions": {},
+    "name": "Module 8 - Advanced Routing (CCNP) | Lab 1 \u2013 Redistribution between OSPF and EIGRP",
+    "project_id": "d7a4767a-9863-482f-a8f0-78509a9d9eb8",
+    "revision": 10,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": true,
+    "show_interface_labels": true,
+    "show_layers": false,
+    "snap_to_grid": true,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "c983e1ad-5646-44e9-8916-79b975efdd9e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"360\" height=\"150\"><rect width=\"360\" height=\"150\" rx=\"12\" ry=\"12\" fill=\"#f2f8f5\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2e8b57\" /></svg>",
+                "x": -180,
+                "y": -130,
+                "z": 0
+            },
+            {
+                "drawing_id": "f0cdedf5-9d62-4fb9-8788-56a365d20df1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#2e8b57\" fill-opacity=\"1.0\">OSPF Domain (Area 0)</text></svg>",
+                "x": -75,
+                "y": -115,
+                "z": 2
+            },
+            {
+                "drawing_id": "0aaae115-e903-41d7-8849-cd9c7412786e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"360\" height=\"150\"><rect width=\"360\" height=\"150\" rx=\"12\" ry=\"12\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": -180,
+                "y": 20,
+                "z": 0
+            },
+            {
+                "drawing_id": "95ed0685-c833-4d2c-9afb-fdd60dd01e26",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">EIGRP AS 100</text></svg>",
+                "x": -75,
+                "y": 35,
+                "z": 2
+            },
+            {
+                "drawing_id": "d3e63ca4-4750-4459-b476-9460a1276add",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.12.0.0/24</text></svg>",
+                "x": -45,
+                "y": -75,
+                "z": 2
+            },
+            {
+                "drawing_id": "ae62d3e4-0767-4943-a63f-87855b49431e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.34.0.0/24</text></svg>",
+                "x": -45,
+                "y": 75,
+                "z": 2
+            },
+            {
+                "drawing_id": "b3fad6e7-4918-4aee-993f-733ee8db1979",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#b45309\" fill-opacity=\"1.0\">[Redist R1/R4]</text></svg>",
+                "x": -145,
+                "y": 0,
+                "z": 2
+            },
+            {
+                "drawing_id": "bfc759b6-c532-4210-a902-31524e49a76d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#b45309\" fill-opacity=\"1.0\">[Redist R2/R3]</text></svg>",
+                "x": 65,
+                "y": 0,
+                "z": 2
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "ce09a8f4-5110-44ca-99af-05b8981ba2f6",
+                "link_style": {},
+                "markers": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/1"
+                        },
+                        "node_id": "b354aa14-41af-44e4-9770-b011e52bc282",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/1"
+                        },
+                        "node_id": "57ab79b5-f0f1-4853-b848-d59429710855",
+                        "port_number": 1
+                    }
+                ],
+                "show_filters_icon": true,
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "61df6b28-01b1-4d21-bd2e-64b5de02ec3a",
+                "link_style": {},
+                "markers": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/1"
+                        },
+                        "node_id": "b52ccd5e-5f03-43f6-824b-5fc99843fed7",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/0"
+                        },
+                        "node_id": "b354aa14-41af-44e4-9770-b011e52bc282",
+                        "port_number": 0
+                    }
+                ],
+                "show_filters_icon": true,
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "bf87dd16-adee-4d4e-a4dd-753953b66a15",
+                "link_style": {},
+                "markers": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/0"
+                        },
+                        "node_id": "68bddb38-ec56-4093-9842-2e8eac890a6a",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/0"
+                        },
+                        "node_id": "b52ccd5e-5f03-43f6-824b-5fc99843fed7",
+                        "port_number": 0
+                    }
+                ],
+                "show_filters_icon": true,
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "2fb88d26-34ba-4555-8563-02739b4b5fd8",
+                "link_style": {},
+                "markers": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/0"
+                        },
+                        "node_id": "57ab79b5-f0f1-4853-b848-d59429710855",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "0/1"
+                        },
+                        "node_id": "68bddb38-ec56-4093-9842-2e8eac890a6a",
+                        "port_number": 1
+                    }
+                ],
+                "show_filters_icon": true,
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "aux": null,
+                "aux_type": null,
+                "compute_id": "local",
+                "console": 5021,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": null,
+                    "text": "R4",
+                    "x": null,
+                    "y": -40
+                },
+                "locked": false,
+                "name": "R4",
+                "node_id": "57ab79b5-f0f1-4853-b848-d59429710855",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 9,
+                    "builtin": false,
+                    "compute_id": "local",
+                    "created_at": "2026-09-10T08:38:57",
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "34bf876c5b3c60f3ef4eb28eb8a176d7",
+                    "nvram": 256,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.17.18.2.iol",
+                    "ram": 1024,
+                    "serial_adapters": 2,
+                    "updated_at": "2026-10-24T10:25:13",
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/affinity/circle/gray/router.svg",
+                "tags": [],
+                "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
+                "width": 60,
+                "x": -100,
+                "y": 75,
+                "z": 1
+            },
+            {
+                "aux": null,
+                "aux_type": null,
+                "compute_id": "local",
+                "console": 5022,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": null,
+                    "text": "R3",
+                    "x": null,
+                    "y": -40
+                },
+                "locked": false,
+                "name": "R3",
+                "node_id": "b354aa14-41af-44e4-9770-b011e52bc282",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 10,
+                    "builtin": false,
+                    "compute_id": "local",
+                    "created_at": "2026-09-10T08:38:57",
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "34bf876c5b3c60f3ef4eb28eb8a176d7",
+                    "nvram": 256,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.17.18.2.iol",
+                    "ram": 1024,
+                    "serial_adapters": 2,
+                    "updated_at": "2026-10-24T10:25:13",
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/affinity/circle/gray/router.svg",
+                "tags": [],
+                "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
+                "width": 60,
+                "x": 100,
+                "y": 75,
+                "z": 1
+            },
+            {
+                "aux": null,
+                "aux_type": null,
+                "compute_id": "local",
+                "console": 5023,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": null,
+                    "text": "R1",
+                    "x": null,
+                    "y": -40
+                },
+                "locked": false,
+                "name": "R1",
+                "node_id": "68bddb38-ec56-4093-9842-2e8eac890a6a",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 11,
+                    "builtin": false,
+                    "compute_id": "local",
+                    "created_at": "2026-09-10T08:38:57",
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "34bf876c5b3c60f3ef4eb28eb8a176d7",
+                    "nvram": 256,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.17.18.2.iol",
+                    "ram": 1024,
+                    "serial_adapters": 2,
+                    "updated_at": "2026-10-24T10:25:13",
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/affinity/circle/gray/router.svg",
+                "tags": [],
+                "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
+                "width": 60,
+                "x": -100,
+                "y": -75,
+                "z": 1
+            },
+            {
+                "aux": null,
+                "aux_type": null,
+                "compute_id": "local",
+                "console": 5024,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": null,
+                    "text": "R2",
+                    "x": null,
+                    "y": -40
+                },
+                "locked": false,
+                "name": "R2",
+                "node_id": "b52ccd5e-5f03-43f6-824b-5fc99843fed7",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 12,
+                    "builtin": false,
+                    "compute_id": "local",
+                    "created_at": "2026-09-10T08:38:57",
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "34bf876c5b3c60f3ef4eb28eb8a176d7",
+                    "nvram": 256,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.17.18.2.iol",
+                    "ram": 1024,
+                    "serial_adapters": 2,
+                    "updated_at": "2026-10-24T10:25:13",
+                    "usage": "",
+                    "use_default_iou_values": false
+                },
+                "symbol": ":/symbols/affinity/circle/gray/router.svg",
+                "tags": [],
+                "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
+                "width": 60,
+                "x": 100,
+                "y": -75,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "3.1.0a5",
+    "zoom": 100
+}

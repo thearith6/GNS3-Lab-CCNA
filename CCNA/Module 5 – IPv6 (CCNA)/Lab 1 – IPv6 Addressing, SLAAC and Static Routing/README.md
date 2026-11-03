@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 5 - IPv6 (CCNA) | Lab 1 - IPv6 Addressing, SLAAC and Static Routing.gns3`](./Module%205%20-%20IPv6%20%28CCNA%29%20%7C%20Lab%201%20-%20IPv6%20Addressing%2C%20SLAAC%20and%20Static%20Routing.gns3)
 
-![topology](topology.png)
+![topo](image.png)
 
 ## Scenario
 Enable IPv6 routing on all routers and configure the IPv6 addresses shown in the table. Bring the interfaces up.
@@ -70,15 +70,13 @@ Task 2 - The PCs use SLAAC.
 **R1:**
 ```cisco
 interface Ethernet0/1
-ipv6 nd prefix 2001:db8:10::/64 86400
-43200
+ipv6 nd prefix 2001:db8:10::/64 86400 43200
 ```
 
 **R3:**
 ```cisco
 interface Ethernet0/1
-ipv6 nd prefix 2001:db8:30::/64 86400
-43200
+ipv6 nd prefix 2001:db8:30::/64 86400 43200
 ```
 
 Task 3 - Configure static routes so that all networks can reach each other.
@@ -86,13 +84,37 @@ Task 3 - Configure static routes so that all networks can reach each other.
 **R1:**
 ```cisco
 ipv6 route ::/0 2001:db8:12::2
+```
+
+**R2:**
+```cisco
 ipv6 route 2001:db8:10::/64 2001:db8:12::1
 ipv6 route 2001:db8:30::/64 2001:db8:23::3
+```
+
+**R3:**
+```cisco
 ipv6 route ::/0 2001:db8:23::2
 ```
 
 ## Note
-1. Verification commands: `Ping 2001:db8:30::1`
+1. 'ipv6 nd prefix SUBNET/MASK VALID-LIFETIME PREFER-LIFETIME' nd is network discovery, valid lifetime = valid duration, prefer lifetime = advertise duration,timer expired, only existing still usable.
+2. Verification: `Ping 2001:db8:30::1`
+
+![Verification-1](image_1.png)
+
 2. The ping should succeed. PC1 should have an address in 2001:db8:10::/64 learned through SLAAC.
-3. On R2, disable IPv6 routing with no ipv6 unicast-routing. Ping R3 from PC1. R2 — R2 stops forwarding IPv6 packets. PC1 can still reach R1 but no longer R3. Note: Fix it with ipv6 unicast-routing.
+
+![Verification-2](image_2.png)
+
+3. On R2, disable IPv6 routing with no ipv6 unicast-routing. Ping R3 from PC1. R2 stops forwarding IPv6 packets. PC1 can still reach R1 but no longer R3. Note: Fix it with ipv6 unicast-routing.
+
+![Breakit-1](image_3.png)
+
 4. On R1, replace the default route with ipv6 route ::/0 2001:db8:12::3. Ping R3 from PC1. — The next hop 2001:db8:12::3 does not exist on this link, so the packets are lost. Note: Fix it by configuring the next hop 2001:db8:12::2 again.
+
+![Breakit-2](image_4.png)
+
+- Why first 2 pings is timeout while 3rd one show unreachable ICMP type1 code3?
+-> At beggining, R1 do ND to find mac address of next-hop(the wrong ipv6), during this, timeouts.
+-> When ND found no mac address reply, R1 report to PC1 dst unreachable.

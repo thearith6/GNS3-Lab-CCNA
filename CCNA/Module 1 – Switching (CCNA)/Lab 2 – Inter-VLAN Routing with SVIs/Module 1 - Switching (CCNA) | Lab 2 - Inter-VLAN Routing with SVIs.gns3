@@ -18,7 +18,62 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "47752ab5-7794-4240-91c4-7bbe9755d286",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"280\" height=\"160\"><rect width=\"280\" height=\"160\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -290,
+                "y": 10,
+                "z": 0
+            },
+            {
+                "drawing_id": "2d62f729-7d6d-4e31-8067-383b2c2fa40f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">MLS1 SVI Routing</text></svg>",
+                "x": -280,
+                "y": 20,
+                "z": 2
+            },
+            {
+                "drawing_id": "a8cee2e2-75da-463c-8707-00f7dc4d198c",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"280\" height=\"160\"><rect width=\"280\" height=\"160\" rx=\"12\" ry=\"12\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 10,
+                "y": 10,
+                "z": 0
+            },
+            {
+                "drawing_id": "da55bc9b-8f19-411b-a401-c82d9a198025",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">SW2 Access Layer</text></svg>",
+                "x": 20,
+                "y": 20,
+                "z": 2
+            },
+            {
+                "drawing_id": "651dbaa4-4102-4c3d-9c90-e176c4316ca2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"110\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">VLAN 10: .10.0/24</text></svg>",
+                "x": -210,
+                "y": 140,
+                "z": 2
+            },
+            {
+                "drawing_id": "ecf9a949-3b4b-4258-927a-d01ef3308812",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"110\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#ea580c\" fill-opacity=\"1.0\">VLAN 20: .20.0/24</text></svg>",
+                "x": 90,
+                "y": 140,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -260,8 +315,8 @@
                 ],
                 "template_id": "52136454-1f50-590a-94e4-816bd02d1062",
                 "width": 60,
-                "x": -105,
-                "y": -30,
+                "x": -80,
+                "y": 80,
                 "z": 1
             },
             {
@@ -298,8 +353,8 @@
                 ],
                 "template_id": "52136454-1f50-590a-94e4-816bd02d1062",
                 "width": 60,
-                "x": 270,
-                "y": -30,
+                "x": 220,
+                "y": 80,
                 "z": 1
             },
             {
@@ -336,8 +391,8 @@
                 ],
                 "template_id": "52136454-1f50-590a-94e4-816bd02d1062",
                 "width": 60,
-                "x": 120,
-                "y": -30,
+                "x": 80,
+                "y": 80,
                 "z": 1
             },
             {
@@ -374,8 +429,8 @@
                 ],
                 "template_id": "52136454-1f50-590a-94e4-816bd02d1062",
                 "width": 60,
-                "x": -255,
-                "y": -30,
+                "x": -220,
+                "y": 80,
                 "z": 1
             },
             {
@@ -421,8 +476,8 @@
                 "tags": [],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -180,
-                "y": -180,
+                "x": -150,
+                "y": -75,
                 "z": 1
             },
             {
@@ -468,8 +523,8 @@
                 "tags": [],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": 195,
-                "y": -180,
+                "x": 150,
+                "y": -75,
                 "z": 1
             },
             {
@@ -515,8 +570,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -30,
-                "y": -255,
+                "x": 0,
+                "y": -200,
                 "z": 1
             }
         ]

@@ -1,0 +1,4 @@
+640:0:4:/var/log/messages
+644:0:0:/var/log/.gns3_perms
+644:0:0:/var/log/apk.log
+755:0:0:/var/log

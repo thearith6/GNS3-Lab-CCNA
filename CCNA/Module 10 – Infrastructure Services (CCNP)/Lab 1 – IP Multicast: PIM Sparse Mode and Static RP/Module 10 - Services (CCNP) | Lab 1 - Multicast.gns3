@@ -18,7 +18,62 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "550ce04d-4391-4681-8e3f-db7043498d66",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"150\"><rect width=\"150\" height=\"150\" rx=\"10\" ry=\"10\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -280,
+                "y": -75,
+                "z": 0
+            },
+            {
+                "drawing_id": "be570e88-821b-4279-99a4-6b14d058d01d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">Multicast Source</text></svg>",
+                "x": -270,
+                "y": -65,
+                "z": 2
+            },
+            {
+                "drawing_id": "c21cd185-dd41-48d8-b4a7-e6a5509a1cbe",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"320\" height=\"170\"><rect width=\"320\" height=\"170\" rx=\"12\" ry=\"12\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": -160,
+                "y": -85,
+                "z": 0
+            },
+            {
+                "drawing_id": "5e04f6d3-7945-4be1-ba40-302e7c989d20",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">PIM-SM Core (R2 RP)</text></svg>",
+                "x": -80,
+                "y": -75,
+                "z": 2
+            },
+            {
+                "drawing_id": "d849b6af-3bd8-491c-b788-7bb9290aed9d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"150\"><rect width=\"150\" height=\"150\" rx=\"10\" ry=\"10\" fill=\"#fffbeb\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#d97706\" /></svg>",
+                "x": 170,
+                "y": -75,
+                "z": 0
+            },
+            {
+                "drawing_id": "acfc9f18-3625-4df3-8256-8364a72f030c",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#d97706\" fill-opacity=\"1.0\">Receiver / IGMP</text></svg>",
+                "x": 180,
+                "y": -65,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -177,7 +232,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -150,
+                "x": -120,
                 "y": 0,
                 "z": 1
             },
@@ -215,7 +270,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 225,
+                "x": 240,
                 "y": 0,
                 "z": 1
             },
@@ -253,7 +308,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -225,
+                "x": -240,
                 "y": 0,
                 "z": 1
             },
@@ -347,7 +402,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 150,
+                "x": 120,
                 "y": 0,
                 "z": 1
             }

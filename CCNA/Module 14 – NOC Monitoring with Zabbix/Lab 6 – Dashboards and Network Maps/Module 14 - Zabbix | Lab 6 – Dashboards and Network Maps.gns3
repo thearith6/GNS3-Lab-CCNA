@@ -18,7 +18,80 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "1076e465-8af1-4d7e-8930-7ee5e5bf2add",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"130\"><rect width=\"150\" height=\"130\" rx=\"10\" ry=\"10\" fill=\"#faf5ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#7c3aed\" /></svg>",
+                "x": -240,
+                "y": -190,
+                "z": 0
+            },
+            {
+                "drawing_id": "12ad8e94-c5be-4771-a875-89ee0f380d6f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#7c3aed\" fill-opacity=\"1.0\">Zabbix Server</text></svg>",
+                "x": -230,
+                "y": -180,
+                "z": 2
+            },
+            {
+                "drawing_id": "943525e1-9caf-4375-ae8a-20d5a0294033",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"480\" height=\"90\"><rect width=\"480\" height=\"90\" rx=\"10\" ry=\"10\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#64748b\" stroke-dasharray=\"5,5\" /></svg>",
+                "x": -240,
+                "y": -45,
+                "z": 0
+            },
+            {
+                "drawing_id": "3f5117a0-3c22-4536-9dab-e6a247876987",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">Management VLAN (192.168.100.0/24)</text></svg>",
+                "x": -90,
+                "y": -35,
+                "z": 2
+            },
+            {
+                "drawing_id": "9e76d5a5-b7ad-4065-a69c-ebd335ce7ca4",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"380\" height=\"130\"><rect width=\"380\" height=\"130\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -120,
+                "y": -190,
+                "z": 0
+            },
+            {
+                "drawing_id": "f65ff5cb-c12e-457d-b9d2-ee8b2bf4453f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">Monitored Routers (SNMP)</text></svg>",
+                "x": -20,
+                "y": -180,
+                "z": 2
+            },
+            {
+                "drawing_id": "a131f6a7-42fe-47f9-808e-67faa4685e8d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"480\" height=\"140\"><rect width=\"480\" height=\"140\" rx=\"12\" ry=\"12\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": -240,
+                "y": 60,
+                "z": 0
+            },
+            {
+                "drawing_id": "d0ea38d4-547d-46f4-9e05-59a7bfd0d047",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">Access Network & Linux Host Agent</text></svg>",
+                "x": -100,
+                "y": 70,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -233,8 +306,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 150,
-                "y": -150,
+                "x": 120,
+                "y": -140,
                 "z": 1
             },
             {
@@ -271,8 +344,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -150,
-                "y": 150,
+                "x": -180,
+                "y": 120,
                 "z": 1
             },
             {
@@ -318,8 +391,8 @@
                 "tags": [],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": 0,
-                "y": 150,
+                "x": -60,
+                "y": 120,
                 "z": 1
             },
             {
@@ -365,8 +438,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 0,
-                "y": -150,
+                "x": -60,
+                "y": -140,
                 "z": 1
             },
             {
@@ -446,8 +519,8 @@
                 "tags": [],
                 "template_id": "f9949ce8-ce50-4b60-9731-4f03dc4e2af7",
                 "width": 60,
-                "x": -150,
-                "y": -150,
+                "x": -180,
+                "y": -140,
                 "z": 1
             },
             {
@@ -493,8 +566,8 @@
                 "tags": [],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": 150,
-                "y": 150,
+                "x": 120,
+                "y": 120,
                 "z": 1
             },
             {

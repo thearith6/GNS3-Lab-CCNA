@@ -18,7 +18,80 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "ba04520f-3c2e-452f-97e3-cdd6285dd995",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"170\" height=\"150\"><rect width=\"170\" height=\"150\" rx=\"10\" ry=\"10\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -300,
+                "y": -75,
+                "z": 0
+            },
+            {
+                "drawing_id": "257161b1-6f87-4906-8bcd-15ff895eb56f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"130\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">LAN 1: 192.168.1.0/24</text></svg>",
+                "x": -290,
+                "y": -65,
+                "z": 2
+            },
+            {
+                "drawing_id": "f2d85853-7f11-4147-81c6-e7a84646699d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"360\" height=\"170\"><rect width=\"360\" height=\"170\" rx=\"12\" ry=\"12\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#64748b\" /></svg>",
+                "x": -180,
+                "y": -110,
+                "z": 0
+            },
+            {
+                "drawing_id": "da8d351d-a623-4657-bc37-996488aec572",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">WAN Core</text></svg>",
+                "x": -60,
+                "y": -100,
+                "z": 2
+            },
+            {
+                "drawing_id": "3e72c40b-5be7-4059-95e0-5be7a2b0c4c7",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"170\" height=\"150\"><rect width=\"170\" height=\"150\" rx=\"10\" ry=\"10\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 130,
+                "y": -75,
+                "z": 0
+            },
+            {
+                "drawing_id": "ed39dfd2-eff5-4860-921b-70726a727892",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"130\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">LAN 2: 192.168.3.0/24</text></svg>",
+                "x": 140,
+                "y": -65,
+                "z": 2
+            },
+            {
+                "drawing_id": "cd3372ac-781a-4603-b3c9-f278188367a4",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.12.0.0/24</text></svg>",
+                "x": -100,
+                "y": -50,
+                "z": 2
+            },
+            {
+                "drawing_id": "639b6fe3-a502-41e2-b86e-a47602b6dfd6",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.23.0.0/24</text></svg>",
+                "x": 30,
+                "y": -50,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -226,8 +299,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 195,
-                "y": 120,
+                "x": 260,
+                "y": 0,
                 "z": 1
             },
             {
@@ -273,7 +346,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 150,
+                "x": 140,
                 "y": 0,
                 "z": 1
             },
@@ -311,8 +384,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -255,
-                "y": 120,
+                "x": -260,
+                "y": 0,
                 "z": 1
             },
             {
@@ -358,7 +431,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -150,
+                "x": -140,
                 "y": 0,
                 "z": 1
             },

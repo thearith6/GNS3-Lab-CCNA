@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "30eb22e0-6a46-4c4c-8c1f-64d7b536337a",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"240\"><rect width=\"440\" height=\"240\" rx=\"14\" ry=\"14\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" stroke-dasharray=\"6,6\" /></svg>",
+                "x": -220,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "drawing_id": "543e2d05-7e32-4183-bb99-899ca708179a",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">OSPF Stub Routing Domain</text></svg>",
+                "x": -100,
+                "y": -105,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},

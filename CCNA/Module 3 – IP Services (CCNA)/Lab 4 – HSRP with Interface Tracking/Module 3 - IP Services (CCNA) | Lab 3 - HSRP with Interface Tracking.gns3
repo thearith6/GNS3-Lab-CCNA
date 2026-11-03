@@ -18,7 +18,62 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "d723b7d4-d175-42c5-a448-8f03a91ae112",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"220\"><rect width=\"200\" height=\"220\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -300,
+                "y": -110,
+                "z": 0
+            },
+            {
+                "drawing_id": "896c1e5a-974b-42a1-bcfd-abd484a5f2f3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">LAN (192.168.1.0/24)</text></svg>",
+                "x": -290,
+                "y": -100,
+                "z": 2
+            },
+            {
+                "drawing_id": "7f7384d2-dea6-417e-89c1-15fa4b6d2a51",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"240\"><rect width=\"180\" height=\"240\" rx=\"12\" ry=\"12\" fill=\"#fffbeb\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#d97706\" /></svg>",
+                "x": -80,
+                "y": -120,
+                "z": 0
+            },
+            {
+                "drawing_id": "2876d115-94cb-40c0-a172-04f1f835c619",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#d97706\" fill-opacity=\"1.0\">HSRP Virtual IP: .1</text></svg>",
+                "x": -70,
+                "y": -110,
+                "z": 2
+            },
+            {
+                "drawing_id": "08b7ee17-5804-44e5-9993-7361d52c1d71",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">[Active: R1 (.2)]</text></svg>",
+                "x": -60,
+                "y": -90,
+                "z": 2
+            },
+            {
+                "drawing_id": "edfd9936-d0df-4da3-90b7-e1dfe7177580",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">[Standby: R2 (.3)]</text></svg>",
+                "x": -60,
+                "y": 95,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -226,8 +281,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -330,
-                "y": -30,
+                "x": -260,
+                "y": 0,
                 "z": 1
             },
             {
@@ -273,8 +328,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -30,
-                "y": -105,
+                "x": 0,
+                "y": -75,
                 "z": 1
             },
             {
@@ -320,8 +375,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -30,
-                "y": 45,
+                "x": 0,
+                "y": 75,
                 "z": 1
             },
             {
@@ -367,8 +422,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 120,
-                "y": -30,
+                "x": 160,
+                "y": 0,
                 "z": 1
             },
             {
@@ -460,8 +515,8 @@
                 "tags": [],
                 "template_id": "92a43283-9c7e-5a68-9695-1f05a2e8dd05",
                 "width": 60,
-                "x": -180,
-                "y": -30,
+                "x": -140,
+                "y": 0,
                 "z": 1
             }
         ]

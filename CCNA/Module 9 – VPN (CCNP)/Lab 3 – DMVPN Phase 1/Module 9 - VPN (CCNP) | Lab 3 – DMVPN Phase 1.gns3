@@ -18,7 +18,71 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "d3ec7202-5dde-4532-b9d8-8e467106d2a9",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"120\"><rect width=\"180\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -90,
+                "y": -160,
+                "z": 0
+            },
+            {
+                "drawing_id": "4b04bebe-be89-4579-85c3-732aa39d0605",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">DMVPN Hub Site</text></svg>",
+                "x": -60,
+                "y": -150,
+                "z": 2
+            },
+            {
+                "drawing_id": "7eb58fe3-0b1a-4f7c-859f-a1a4e8efea8b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"120\"><rect width=\"160\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": -200,
+                "y": 40,
+                "z": 0
+            },
+            {
+                "drawing_id": "6016c8db-7148-430f-b7e4-068734c160c2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">Spoke 1</text></svg>",
+                "x": -180,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "6f54d899-6772-4321-b6a4-7278f3666017",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"120\"><rect width=\"160\" height=\"120\" rx=\"10\" ry=\"10\" fill=\"#fffbeb\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#d97706\" /></svg>",
+                "x": 40,
+                "y": 40,
+                "z": 0
+            },
+            {
+                "drawing_id": "47c9bf24-ff52-4f2a-91e8-b5645518fd40",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#d97706\" fill-opacity=\"1.0\">Spoke 2</text></svg>",
+                "x": 60,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "742307b9-cd5d-464d-be28-c2116d3c2d8e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">NBMA Underlay (SW1)</text></svg>",
+                "x": -80,
+                "y": -25,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -149,8 +213,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -150,
-                "y": 150,
+                "x": -140,
+                "y": 100,
                 "z": 1
             },
             {
@@ -196,8 +260,8 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 150,
-                "y": 150,
+                "x": 140,
+                "y": 100,
                 "z": 1
             },
             {
@@ -244,7 +308,7 @@
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
                 "x": 0,
-                "y": -150,
+                "y": -120,
                 "z": 1
             },
             {

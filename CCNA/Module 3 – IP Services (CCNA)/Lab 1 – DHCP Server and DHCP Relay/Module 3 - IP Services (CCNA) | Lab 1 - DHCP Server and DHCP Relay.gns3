@@ -18,7 +18,62 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "91b07ef3-daef-4dcd-8624-d016896f1560",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"150\"><rect width=\"160\" height=\"150\" rx=\"10\" ry=\"10\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -230,
+                "y": -75,
+                "z": 0
+            },
+            {
+                "drawing_id": "4d9b63f5-16c5-41e9-a977-53fa79543d12",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">DHCP Server</text></svg>",
+                "x": -220,
+                "y": -65,
+                "z": 2
+            },
+            {
+                "drawing_id": "10252bca-7436-4c6e-8fff-71db015dd2b8",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"150\"><rect width=\"160\" height=\"150\" rx=\"10\" ry=\"10\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 90,
+                "y": -75,
+                "z": 0
+            },
+            {
+                "drawing_id": "a850f3cb-bc5c-40ea-a7d7-06ea6776c446",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">DHCP Client</text></svg>",
+                "x": 100,
+                "y": -65,
+                "z": 2
+            },
+            {
+                "drawing_id": "4641840e-0b84-41e8-8789-474a954357ae",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.12.0.0/24</text></svg>",
+                "x": -100,
+                "y": -25,
+                "z": 2
+            },
+            {
+                "drawing_id": "b6da26ca-0b54-4752-8a8d-8e956f6ffb2b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">192.168.2.0/24</text></svg>",
+                "x": 60,
+                "y": -25,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -124,7 +179,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": 150,
+                "x": 160,
                 "y": 0,
                 "z": 1
             },
@@ -171,7 +226,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -150,
+                "x": -160,
                 "y": 0,
                 "z": 1
             },

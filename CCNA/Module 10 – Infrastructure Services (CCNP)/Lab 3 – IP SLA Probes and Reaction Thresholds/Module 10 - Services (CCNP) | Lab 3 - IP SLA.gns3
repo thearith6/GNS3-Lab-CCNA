@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "a667e10d-0a8d-4f83-969d-54f50fafee64",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"400\" height=\"200\"><rect width=\"400\" height=\"200\" rx=\"14\" ry=\"14\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#475569\" /></svg>",
+                "x": -200,
+                "y": -100,
+                "z": 0
+            },
+            {
+                "drawing_id": "be94476b-e380-4d24-974b-1843579c6529",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#334155\" fill-opacity=\"1.0\">IP SLA Measurement Domain</text></svg>",
+                "x": -100,
+                "y": -85,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},

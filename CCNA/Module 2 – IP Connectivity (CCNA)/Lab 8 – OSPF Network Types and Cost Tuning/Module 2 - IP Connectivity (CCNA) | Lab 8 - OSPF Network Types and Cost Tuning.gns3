@@ -18,7 +18,53 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "52a517df-c519-41e6-8983-19d6e79942fc",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"360\" height=\"240\"><rect width=\"360\" height=\"240\" rx=\"16\" ry=\"16\" fill=\"#f2f8f5\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2e8b57\" /></svg>",
+                "x": -180,
+                "y": -115,
+                "z": 0
+            },
+            {
+                "drawing_id": "1842bdcb-cf7a-41c3-aa13-1d13f4296e68",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#2e8b57\" fill-opacity=\"1.0\">OSPF Area 0</text></svg>",
+                "x": -70,
+                "y": -100,
+                "z": 2
+            },
+            {
+                "drawing_id": "c7aea26a-6b7c-4efb-a5a2-2b4e5a1bd75f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.12.0.0/24</text></svg>",
+                "x": -45,
+                "y": -80,
+                "z": 2
+            },
+            {
+                "drawing_id": "3acdfdfe-a023-44f1-970f-25e383893bcf",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.13.0.0/24</text></svg>",
+                "x": -90,
+                "y": 0,
+                "z": 2
+            },
+            {
+                "drawing_id": "f61c2a28-8d25-4776-86c9-717c97e738a5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">10.23.0.0/24</text></svg>",
+                "x": 20,
+                "y": 0,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -130,7 +176,7 @@
                 "port_name_format": "Ethernet{segment0}/{port0}",
                 "port_segment_size": 4,
                 "properties": {
-                    "application_id": 3,
+                    "application_id": 2,
                     "builtin": false,
                     "compute_id": "local",
                     "created_at": "2026-09-10T08:38:57",
@@ -149,7 +195,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -150,
+                "x": -120,
                 "y": -75,
                 "z": 1
             },
@@ -196,7 +242,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 150,
+                "x": 120,
                 "y": -75,
                 "z": 1
             },
@@ -204,7 +250,7 @@
                 "aux": null,
                 "aux_type": null,
                 "compute_id": "local",
-                "console": 5023,
+                "console": 5000,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],

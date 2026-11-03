@@ -18,7 +18,107 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "5d7a6eea-90ec-417b-ad2f-3932968634bf",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"140\"><rect width=\"120\" height=\"140\" rx=\"10\" ry=\"10\" fill=\"#f0f7ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": -280,
+                "y": 40,
+                "z": 0
+            },
+            {
+                "drawing_id": "ed35b91c-c02e-4b14-9085-c6a35fc3247b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"80\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">VLAN 10</text></svg>",
+                "x": -260,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "bafb9f09-7cca-47e6-9e31-819a931d3c3b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"140\"><rect width=\"120\" height=\"140\" rx=\"10\" ry=\"10\" fill=\"#fdf7f0\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#d97706\" /></svg>",
+                "x": -140,
+                "y": 40,
+                "z": 0
+            },
+            {
+                "drawing_id": "1beb5b73-40da-42e2-a113-ca4d793c8222",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"80\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#d97706\" fill-opacity=\"1.0\">VLAN 20</text></svg>",
+                "x": -120,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "c51e6408-3e51-4512-84c6-4a7cc19a7227",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"140\"><rect width=\"120\" height=\"140\" rx=\"10\" ry=\"10\" fill=\"#f0f7ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 20,
+                "y": 40,
+                "z": 0
+            },
+            {
+                "drawing_id": "37f7e5d1-c009-4842-906f-526390867f4e",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"80\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">VLAN 10</text></svg>",
+                "x": 40,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "cbbdbe19-613f-4b40-b95a-8835d033e4cf",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"140\"><rect width=\"120\" height=\"140\" rx=\"10\" ry=\"10\" fill=\"#fdf7f0\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#d97706\" /></svg>",
+                "x": 160,
+                "y": 40,
+                "z": 0
+            },
+            {
+                "drawing_id": "681e4e53-c546-403f-91b8-05057872bab5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"80\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#d97706\" fill-opacity=\"1.0\">VLAN 20</text></svg>",
+                "x": 180,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "819c5c89-8d2a-4ce2-a4cf-c015dd8c0a6f",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"80\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">[Trunk]</text></svg>",
+                "x": -20,
+                "y": -65,
+                "z": 2
+            },
+            {
+                "drawing_id": "edfd41f1-278a-4a3b-8693-b961b01ddd96",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e40af\" fill-opacity=\"1.0\">172.16.10.0/24</text></svg>",
+                "x": -270,
+                "y": 190,
+                "z": 2
+            },
+            {
+                "drawing_id": "29b83b81-c61c-46a2-88ab-993d1fd328f6",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#9a3412\" fill-opacity=\"1.0\">172.16.20.0/24</text></svg>",
+                "x": 130,
+                "y": 190,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -169,8 +269,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -200,
-                "y": 0,
+                "x": -150,
+                "y": -50,
                 "z": 1
             },
             {
@@ -207,8 +307,8 @@
                 ],
                 "template_id": "52136454-1f50-590a-94e4-816bd02d1062",
                 "width": 60,
-                "x": 195,
-                "y": 120,
+                "x": -80,
+                "y": 100,
                 "z": 1
             },
             {
@@ -245,8 +345,8 @@
                 ],
                 "template_id": "52136454-1f50-590a-94e4-816bd02d1062",
                 "width": 60,
-                "x": -182,
-                "y": 130,
+                "x": -220,
+                "y": 100,
                 "z": 1
             },
             {
@@ -294,8 +394,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": 200,
-                "y": 0,
+                "x": 150,
+                "y": -50,
                 "z": 1
             }
         ]

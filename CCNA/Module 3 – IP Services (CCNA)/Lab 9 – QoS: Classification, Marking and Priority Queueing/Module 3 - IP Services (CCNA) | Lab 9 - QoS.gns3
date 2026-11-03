@@ -18,7 +18,26 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "35173fa0-a0de-4315-b71a-3f7ffa0cf9b2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"420\" height=\"260\"><rect width=\"420\" height=\"260\" rx=\"16\" ry=\"16\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#3b82f6\" stroke-dasharray=\"6,6\" /></svg>",
+                "x": -210,
+                "y": -130,
+                "z": 0
+            },
+            {
+                "drawing_id": "e79ba8f8-16ae-4951-b45a-4c643e932a90",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1d4ed8\" fill-opacity=\"1.0\">Management & Services Domain</text></svg>",
+                "x": -90,
+                "y": -115,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},

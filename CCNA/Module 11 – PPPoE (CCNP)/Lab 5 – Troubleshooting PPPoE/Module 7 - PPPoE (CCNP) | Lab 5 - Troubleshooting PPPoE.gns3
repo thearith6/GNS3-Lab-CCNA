@@ -18,7 +18,89 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "304a0b32-f0e2-4b25-9c7f-46c27aa17342",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"240\" height=\"180\"><rect width=\"240\" height=\"180\" rx=\"12\" ry=\"12\" fill=\"#f0fdf4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#16a34a\" /></svg>",
+                "x": -290,
+                "y": -90,
+                "z": 0
+            },
+            {
+                "drawing_id": "50ca2e43-0fc3-4835-a35f-78c6d7c82918",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#16a34a\" fill-opacity=\"1.0\">Customer Site (CPE)</text></svg>",
+                "x": -280,
+                "y": -80,
+                "z": 2
+            },
+            {
+                "drawing_id": "25105fb0-7e3b-4e26-91cc-6f537b1217e5",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"160\" height=\"180\"><rect width=\"160\" height=\"180\" rx=\"12\" ry=\"12\" fill=\"#eff6ff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#2563eb\" /></svg>",
+                "x": 20,
+                "y": -90,
+                "z": 0
+            },
+            {
+                "drawing_id": "70afa27b-b878-4fc7-97d7-6c00026b839b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"130\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#2563eb\" fill-opacity=\"1.0\">ISP PPPoE Server</text></svg>",
+                "x": 30,
+                "y": -80,
+                "z": 2
+            },
+            {
+                "drawing_id": "3d4b9664-1afc-4831-8614-aaeae161b782",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"150\" height=\"180\"><rect width=\"150\" height=\"180\" rx=\"12\" ry=\"12\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#64748b\" /></svg>",
+                "x": 200,
+                "y": -90,
+                "z": 0
+            },
+            {
+                "drawing_id": "aec59bc4-309a-4748-9567-090dc1c2e571",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"100\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#475569\" fill-opacity=\"1.0\">Internet</text></svg>",
+                "x": 210,
+                "y": -80,
+                "z": 2
+            },
+            {
+                "drawing_id": "03464fa6-bb36-4b94-8cec-fe288342cdc6",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#dc2626\" fill-opacity=\"1.0\">[PPPoE Session]</text></svg>",
+                "x": -45,
+                "y": -25,
+                "z": 2
+            },
+            {
+                "drawing_id": "0d5b8f02-3807-4fe8-8c5b-dc0eff8d7067",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"120\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">LAN: 192.168.1.0/24</text></svg>",
+                "x": -270,
+                "y": 50,
+                "z": 2
+            },
+            {
+                "drawing_id": "7fd53131-ceae-43fa-acb1-f8611ae4e227",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"110\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#1e3a8a\" fill-opacity=\"1.0\">203.0.113.0/24</text></svg>",
+                "x": 140,
+                "y": -25,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -149,7 +231,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": -75,
+                "x": -100,
                 "y": 0,
                 "z": 1
             },
@@ -187,7 +269,7 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -225,
+                "x": -250,
                 "y": 0,
                 "z": 1
             },
@@ -234,7 +316,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 75,
+                "x": 100,
                 "y": 0,
                 "z": 1
             },
@@ -281,7 +363,7 @@
                 "tags": [],
                 "template_id": "60b8143f-077c-4dcc-97ae-8ba1f7ba7fff",
                 "width": 60,
-                "x": 225,
+                "x": 250,
                 "y": 0,
                 "z": 1
             }

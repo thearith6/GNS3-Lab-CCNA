@@ -1,0 +1,4 @@
+2026-10-29 03:23:06 auth.err sshd[325]: error: Bind to port 22 on 0.0.0.0 failed: Address in use.
+2026-10-29 03:23:06 auth.err sshd[325]: error: Bind to port 22 on :: failed: Address in use.
+2026-10-29 03:23:06 auth.crit sshd[325]: fatal: Cannot bind any address.
+2026-10-29 03:23:07 syslog.info : [origin software="rsyslogd" swVersion="8.2604.0" x-pid="315" x-info="https://www.rsyslog.com"] start

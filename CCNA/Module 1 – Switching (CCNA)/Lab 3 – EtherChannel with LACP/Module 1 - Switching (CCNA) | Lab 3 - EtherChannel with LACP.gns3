@@ -18,7 +18,35 @@
     "supplier": null,
     "topology": {
         "computes": [],
-        "drawings": [],
+        "drawings": [
+            {
+                "drawing_id": "113db9bb-09f6-4254-bfd1-7cb8679e60c3",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"440\" height=\"250\"><rect width=\"440\" height=\"250\" rx=\"16\" ry=\"16\" fill=\"#f8fafc\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#3b82f6\" /></svg>",
+                "x": -220,
+                "y": -100,
+                "z": 0
+            },
+            {
+                "drawing_id": "bc1dcba2-7b01-421d-a29c-5926c0a5ce43",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"180\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#1d4ed8\" fill-opacity=\"1.0\">LACP EtherChannel (Po1)</text></svg>",
+                "x": -90,
+                "y": -85,
+                "z": 2
+            },
+            {
+                "drawing_id": "f7deec04-9a21-47c8-82ac-118bb67a3f9c",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"9.0\" font-weight=\"bold\" fill=\"#0284c7\" fill-opacity=\"1.0\">172.16.1.0/24</text></svg>",
+                "x": -60,
+                "y": 40,
+                "z": 2
+            }
+        ],
         "links": [
             {
                 "filters": {},
@@ -220,8 +248,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -630,
-                "y": -30,
+                "x": -150,
+                "y": 100,
                 "z": 1
             },
             {
@@ -269,8 +297,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -194,
-                "y": -155,
+                "x": 150,
+                "y": -50,
                 "z": 1
             },
             {
@@ -307,8 +335,8 @@
                 "tags": [],
                 "template_id": "f8cf2526-410c-45c7-9ff3-1570a9eb029e",
                 "width": 60,
-                "x": -105,
-                "y": -30,
+                "x": 150,
+                "y": 100,
                 "z": 1
             },
             {
@@ -356,8 +384,8 @@
                 ],
                 "template_id": "33875a3b-c2f9-41ef-ad58-14d8bae80e9f",
                 "width": 60,
-                "x": -592,
-                "y": -154,
+                "x": -150,
+                "y": -50,
                 "z": 1
             }
         ]
