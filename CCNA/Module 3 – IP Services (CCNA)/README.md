@@ -10,4 +10,4 @@
 - [Lab 6 – Extended ACLs](Lab 6 – Extended ACLs/README.md)
 - [Lab 7 – Device Management: SSH, NTP and Syslog](Lab 7 – Device Management: SSH, NTP and Syslog/README.md)
 - [Lab 8 – SNMPv2c and SNMPv3](Lab 8 – SNMPv2c and SNMPv3/README.md)
-- [Lab 9 – QoS: Classification, Marking and Priority Queueing](Lab 9 – QoS: Classification, Marking and Priority Queueing/README.md)
+- *Lab 9 – QoS: Classification, Marking and Priority Queueing (In development on `dev` branch)*

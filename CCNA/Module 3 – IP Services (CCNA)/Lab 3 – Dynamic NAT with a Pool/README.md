@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 3 - IP Services (CCNA) | Lab 3 - Dynamic NAT with a Pool.gns3`](./Module%203%20-%20IP%20Services%20%28CCNA%29%20%7C%20Lab%203%20-%20Dynamic%20NAT%20with%20a%20Pool.gns3)
 
-![topology](topology.png)
+![topology](image.png)
 
 ## Scenario
 Configure dynamic NAT on R1. The inside hosts of 192.168.10.0/24 use a pool of two public addresses: 203.0.113.3 and 203.0.113.4. Add a default route towards the ISP.
