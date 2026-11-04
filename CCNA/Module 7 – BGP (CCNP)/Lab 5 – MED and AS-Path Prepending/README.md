@@ -2,7 +2,7 @@
 
 > **GNS3 Project:** [`Module 6 - BGP (CCNP) | Lab 5 - MED and AS-Path Prepending.gns3`](./Module%206%20-%20BGP%20%28CCNP%29%20%7C%20Lab%205%20-%20MED%20and%20AS-Path%20Prepending.gns3)
 
-![topology](topology.png)
+![topo](image_7.png)
 
 ## Scenario
 Starting from the eBGP configuration of Lab 4 (Task 1), add a second eBGP session between R1 and R2 over the E 0/2 link (10.12.1.0/24). Configure R1 so that R2 prefers the E 0/0 link for the network 192.168.10.0/24, by sending a MED of 50 on E 0/0 and a MED of 100 on E 0/2.
@@ -71,9 +71,34 @@ clear ip bgp * out
 
 Task 3 - Verify the paths on R2 and R4.
 
+Task-1 MED
+![Task-1](image.png)
+
+
+Task-2 Route-prepending
+- Before
+
+![Task-2.1](image_1.png)
+
+- After
+
+![Task-2.2](image_2.png)
+![Task-2.3](image_3.png)
 ## Note
-1. Verification commands: `Show ip bgp 192.168.10.0`
-2. R2 should have two paths. The path from 10.12.0.1 has the lower metric (50) and is the best path.
-3. R4 should select the path via R3 (10.34.0.3). Its AS path 65300 65100 is shorter than 65200 65100 65100 65100 65100.
-4. On R1, apply the route-map MED-E00 inbound instead of outbound for the neighbor 10.12.0.2. Check the BGP table of R4. — R2 no longer receives the prepended path and the MED from this neighbor. R4 can choose the path via R2 again. Note: Apply the route-map outbound to fix it.
-5. Change the number of prepends in MED-E02 to 1 and do not refresh the session. Check the BGP table of R2. — R2 still shows the old AS path. An outbound policy is only applied to the updates after a refresh. Note: Apply it with clear ip bgp 10.12.1.2 out.
+1. Route-map policy apply OUT = on advertised routes = manipulate INCOMING TRAFFICS.
+(Lab-4, route-map policy like local preference, weight apply in = on learned routes = affect OUTGOING TRAFFICS)
+  - Task-1: R2 should have two paths. The path from 10.12.0.1 has the lower metric (50) and is the best path.
+  - R4 should select the path via R3 (10.34.0.3). Its AS path 65300 65100 is shorter than 65200 65100 65100 65100 65100.
+  (Sender R4, compare AS-Path only after weight - local pref - origin, so R1 PREPENDING is not very effective!)
+  
+2. On R1, apply the route-map MED-E00 inbound instead of outbound for the neighbor 10.12.0.2. Check the BGP table of R4. — R2 no longer receives the prepended path and the MED from this neighbor. R4 can choose the path via R2 again. Note: Apply the route-map outbound to fix it.
+
+![Breakit-1](image_4.png)
+
+5. Change the number of prepends in MED-E02 to 1 and do not refresh the session. Check the BGP table of R2. — R2 still shows the old AS path. 
+
+![Breakit-2](image_5.png)
+
+An outbound policy is only applied to the updates after a refresh. Note: Apply it with clear ip bgp 10.12.1.2 out.
+
+![Breakit-2.1](image_6.png)

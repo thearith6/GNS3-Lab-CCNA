@@ -51,5 +51,4 @@ Do the same on SW1 and SW2.
   - SW(config)#lldp run, no lldp run
   - SW(config-if)#lldp transmit/receive, no lldp transmit/receive
 4. On SW2, disable CDP globally. Check the CDP neighbors and the LLDP neighbors of SW1. — SW1 no longer sees SW2 in the CDP neighbor table. SW2 is still visible with LLDP. 
-![Breakit-1](image_3.png)
 Note: Fix it with cdp run.
