@@ -57,6 +57,15 @@ fmc*
 wlc*
 vwlc*
 
+# Fortinet images / licenses / config backups (proprietary or contain secrets)
+fortios*
+FGT_VM*
+FortiGate-VM*
+FortiManager*
+FortiAnalyzer*
+*.conf.bak
+sys_global*.conf
+
 # Virtual machine & hypervisor disk images (large, licensed)
 *.qcow2
 *.qcow2.gz
