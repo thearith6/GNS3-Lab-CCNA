@@ -1,10 +1,10 @@
 # CCNA → CCNP Labs
 ### Switching, Routing, Security and BGP Practice Labs with Fault-Injection Exercises
 
-[![Labs Completed](https://img.shields.io/badge/Labs-36-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3)
+[![Labs Completed](https://img.shields.io/badge/Labs-36-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Labs)
 [![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
-[![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/GNS3)
-[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3)
+[![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
+[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
 
 Part of the [GNS3 labs repository](../README.md).
 
@@ -145,7 +145,7 @@ BGP labs on eBGP/iBGP peering, route reflectors, and path selection.
 
 ## Roadmap (`dev` Branch)
 
-The following labs and modules are being built on the [`dev`](https://github.com/thearith6/GNS3/tree/dev) branch and will move to `main` once validated:
+The following labs and modules are being built on the [`dev`](https://github.com/thearith6/GNS3-Labs/tree/dev) branch and will move to `main` once validated:
 
 - **Module 3 (Lab 9):** QoS: Classification, Marking and Priority Queueing
 - **Module 6:** Wireless LAN Architecture & Network Automation (RESTCONF / Ansible)

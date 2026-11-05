@@ -2,7 +2,7 @@
 ### Hands-on networking labs built and tested in GNS3, each with a fault-injection exercise
 
 [![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
-[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3)
+[![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3-Labs)
 
 ---
 
@@ -22,7 +22,7 @@ More collections (for example network monitoring) will be added as separate fold
 ## Repository Layout
 
 ```
-GNS3/
+GNS3-Labs/
 ├── CCNA/          Completed CCNA / CCNP labs (see CCNA/README.md)
 ├── Fortigate/     FortiGate labs and lab template
 └── README.md
