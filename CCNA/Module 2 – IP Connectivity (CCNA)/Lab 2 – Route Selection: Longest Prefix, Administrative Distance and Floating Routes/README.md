@@ -1,86 +1,100 @@
-## Lab 2 - Route Selection: Longest Prefix, Administrative Distance and Floating Routes
+# Lab 2.2: Route Selection — Longest Prefix, Administrative Distance & Floating Routes
 
 > **GNS3 Project:** [`Module 2 - IP Connectivity (CCNA) | Lab 2 - Route Selection.gns3`](./Module%202%20-%20IP%20Connectivity%20%28CCNA%29%20%7C%20Lab%202%20-%20Route%20Selection.gns3)
+> **Platform:** GNS3 3.1 · Cisco IOL L3 `17.18.2` · 3 routers, 2 VPCS hosts
+> **Key takeaway:** A router picks the **longest prefix** first and compares **administrative distance** only between routes with the same prefix. A floating static route (higher AD) is a backup that is installed only when the primary route disappears.
 
-![topo](image.png)
+![Topology Diagram](image.png)
 
-## Scenario
-Starting from the default routes of Lab 1, use the direct link between R1 and R3. Add a more specific static route on each router for the LAN of the other router. R2 keeps its static routes.
+---
 
-- **Devices:** PC1 (PC), PC3 (PC), R1 (IOU L3), R2 (IOU L3), R3 (IOU L3)
-- **Base Addressing:**
-  - `R3` Ethernet0/0: `10.0.23.2` (255.255.255.252)
-  - `R3` Ethernet0/1: `192.168.3.1` (255.255.255.0)
-  - `R3` Ethernet0/2: `10.0.13.2` (255.255.255.252)
-  - `R2` Ethernet0/0: `10.0.12.2` (255.255.255.252)
-  - `R2` Ethernet0/1: `10.0.23.1` (255.255.255.252)
-  - `R1` Ethernet0/0: `10.0.12.1` (255.255.255.252)
-  - `R1` Ethernet0/1: `192.168.1.1` (255.255.255.0)
-  - `R1` Ethernet0/2: `10.0.13.1` (255.255.255.252)
-  - `PC3` Ethernet0: `192.168.3.11` (GW: 192.168.3.1)
-  - `PC1` Ethernet0: `192.168.1.11` (GW: 192.168.1.1)
+## 1. Scenario & Tasks
 
-Task 1 - Starting from the default routes of Lab 1, use the direct link between R1 and R3.
-  - Add a more specific static route on each router for the LAN of the other router.
-  - R2 keeps its static routes.
+Starting from the default routes of Lab 2.1 (same topology and addressing), use the direct R1–R3 link.
 
-Task 2 - Make the path through R2 a backup.
-  - Configure a floating static route with an administrative distance of 200 on R1 and R3 for the LAN of the other router.
+- **Task 1 — More specific routes:** Add a more specific static route on R1 and R3 for the LAN of the other router, using the direct link. R2 keeps its static routes.
+- **Task 2 — Floating backup:** Make the path through R2 a backup with a floating static route (administrative distance 200) on R1 and R3 for the other router's LAN.
+- **Task 3 — Test the failover:** Shut down `E0/2`, check the route and trace the path from PC1, then bring the interface back up.
 
-Task 3 - Test the failover.
-  - Shut down E 0/2 on R1, check the route and trace the path from PC1.
-  - Then bring the interface back up.
+### IPv4 Addressing
 
-## Action
-Task 1 - Starting from the default routes of Lab 1, use the direct link between R1 and R3.
+| Device | Interfaces |
+| :--- | :--- |
+| **R1** | `E0/0`: 10.0.12.1/30, `E0/1`: 192.168.1.1/24, `E0/2`: 10.0.13.1/30 |
+| **R2** | `E0/0`: 10.0.12.2/30, `E0/1`: 10.0.23.1/30 |
+| **R3** | `E0/0`: 10.0.23.2/30, `E0/1`: 192.168.3.1/24, `E0/2`: 10.0.13.2/30 |
+| **PC1** | 192.168.1.11/24, gateway 192.168.1.1 |
+| **PC3** | 192.168.3.11/24, gateway 192.168.3.1 |
+
+---
+
+## 2. Configuration & Verification
+
+### Task 1: Specific Routes over the Direct Link
 
 **R1:**
-```cisco
+~~~cisco
 ip route 192.168.3.0 255.255.255.0 10.0.13.2
-```
+~~~
 
 **R3:**
-```cisco
+~~~cisco
 ip route 192.168.1.0 255.255.255.0 10.0.13.1
-Traceroute 192.168.3.11
-```
-**PC1:**
-```
+~~~
+
+* **Verification (`trace` from PC1):** the path goes straight over the R1–R3 link and no longer through R2.
+
+~~~
 PC1> trace 192.168.3.11
 trace to 192.168.3.11, 8 hops max, press Ctrl+C to stop
  1   192.168.1.1   0.276 ms  0.123 ms  0.149 ms
  2   10.0.13.2   0.365 ms  0.243 ms  0.196 ms
  3   *192.168.3.11   0.642 ms (ICMP type:3, code:3, Destination port unreachable)
-```
+~~~
 
-Task 2 - Make the path through R2 a backup.
+---
+
+### Task 2: Floating Static Routes (AD 200) via R2
 
 **R1:**
-```cisco
+~~~cisco
 ip route 192.168.3.0 255.255.255.0 10.0.12.2 200
+~~~
+
+**R3:**
+~~~cisco
 ip route 192.168.1.0 255.255.255.0 10.0.23.1 200
-```
+~~~
+* The floating routes (AD 200) are installed only when the primary route goes down.
 
-Task 3 - Test the failover.
+---
 
-**R1 & R3**
-```cisco
+### Task 3: Failover Test
+
+**R1 and R3:**
+~~~cisco
 interface Ethernet0/2
-shutdown
-```
+ shutdown
+~~~
+* **Result:** the floating routes take over and traffic follows the path through R2.
+
 ![Task-3](image_1.png)
 
-## Note
-1. The floating static route with AD 200 only install when the primary route down.
-2. Task 3 - If shutdown only R1's E0/2, ping would fail as return ping from R3 still choose the primary route.
-  - Method 1 - Shut both interfaces on both R1 and R3.
-  - Method 2 - IP SLA to track which link down and change  route accordingly
-3. On R1, change the administrative distance of the floating route to 1. Check the routing table. — Both routes have the same administrative distance, so R1 installs both and shares the traffic. 
+> **Both ends must fail over.** If only R1's `E0/2` is shut down, the ping fails, because R3 still chooses its primary route for the return traffic. Two ways to handle this: shut down the interface on both R1 and R3, or use IP SLA with tracking to detect the failure and change the route automatically.
+
+---
+
+## 3. Notes & Fault-Injection (Break-It)
+
+### Fault-Injection 1: Same Administrative Distance
+* **Injected Fault:** On R1, changed the administrative distance of the floating route to 1.
+* **Symptom:** Both routes have the same administrative distance, so R1 installs both and shares the traffic between them.
+* **Fix:** Use administrative distance 200 again.
 
 ![Breakit-1](image_2.png)
 
-Note: Fix it by using the administrative distance 200 again.
-4. On R1, add the route ip route 192.168.3.0 255.255.255.128 10.0.12.2 250. Trace the path from PC1 to PC3.
-![Breakit-2](image_3.png)
+### Fault-Injection 2: Longest Prefix Beats Administrative Distance
+* **Injected Fault:** On R1, added `ip route 192.168.3.0 255.255.255.128 10.0.12.2 250` and traced the path from PC1 to PC3.
+* **Result:** The traffic goes through R2, even though this route has the worst administrative distance (250). The router first chooses the longest prefix (`/25`) and compares administrative distance only between routes with the same prefix.
 
-The traffic goes through R2. The router first chooses the longest prefix (/25) and only compares the administrative distance between routes with the same prefix.
+![Breakit-2](image_3.png)
