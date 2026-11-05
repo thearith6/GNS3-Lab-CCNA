@@ -142,3 +142,6 @@ Thumbs.db
 .idea/
 .vscode/
 
+
+# GNS3 project backups (auto-generated, clutter)
+*.bak

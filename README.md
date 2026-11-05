@@ -8,37 +8,40 @@
 
 ---
 
-## 📌 Executive Summary
+## Summary
 
 This repository documents hands-on network topologies, configurations, protocol analyses, and troubleshooting scenarios designed for enterprise architectures (covering **CCNA** through **CCNP Enterprise ENCOR / ENARSI** concepts).
 
 Unlike theoretical configurations, **every completed lab in this repository includes:**
-1. **Production-aligned network topologies** built and validated in GNS3.
-2. **Complete device configurations** with strict IP addressing schemes.
-3. **Show-command verification** with expected CLI outputs and routing tables.
-4. **"Break-It" / Fault-Injection Testing:** Deliberate misconfigurations (e.g., mismatched MTU, STP root bridge hijacking, asymmetric BGP route-maps, DHCP exhaustion) with terminal screenshots, symptom analysis, root-cause diagnostics, and step-by-step remediation.
+1. **Realistic enterprise-style topologies** built and tested in GNS3.
+2. **Device configurations** with a documented IP addressing scheme.
+3. **Show-command verification** with real CLI output and screenshots.
+
+**Most labs also include a "Break-It" / fault-injection exercise:** a deliberate misconfiguration (e.g., a rogue DHCP server, a rogue root bridge with priority 0, a missing `ip helper-address`, a BGP policy edited without a session refresh) with a screenshot of the symptom and the fix.
 
 ---
 
-## 🛠️ Lab Environment & Appliance Specifications
+## Lab Environment & Appliance Specifications
 
-All topologies are deployed and benchmarked on a standardized virtualized infrastructure:
+All topologies are built and tested on the same virtualized setup:
 
 | Component | Specification | Purpose |
 | :--- | :--- | :--- |
 | **Network Emulator** | GNS3 Server / Client v3.1 | Core network topology orchestration |
 | **Layer 3 Routing** | Cisco IOU / IOL (`x86_64_crb_linux-adventerprisek9-ms.17.18.2.iol`) | BGP, OSPFv2/OSPFv3, EIGRP, Policy Routing |
 | **Layer 2 Switching** | Cisco IOU / IOL (`x86_64_crb_linux_l2-adventerprisek9-ms.17.18.2.iol`) | VLANs, Trunks, EtherChannel, Rapid PVST+, Port Security |
-| **Authentication & AAA** | Docker (`freeradius-server:latest`) | 802.1X and centralized RADIUS AAA testing |
-| **End Systems & Testing** | VPCS & Alpine Linux (`alpine-ssh:latest`) | Host IP testing, DHCP client verification, SSH automation |
+| **Switching (security labs 4.2–4.3)** | Cisco IOSvL2 (QEMU appliance) | DHCP Snooping, Dynamic ARP Inspection |
+| **Router (hardening lab 4.4)** | Cisco IOS router (QEMU appliance) | Device hardening |
+| **Authentication & AAA** | Docker (`freeradius-server:latest`) | Centralized RADIUS AAA testing |
+| **End Systems & Testing** | VPCS & Alpine Linux (`alpine-ssh:latest`) | Host IP testing, DHCP client verification, SSH/NTP/syslog testing |
 
 ---
 
-## 📚 Portfolio Lab Matrix (36 Fully Validated Labs)
+## Portfolio Lab Matrix (36 Fully Validated Labs)
 
 The `main` branch maintains only **100% completed, fully validated labs** with zero broken dependencies.
 
-### 🔷 Module 1: Layer 2 Switching & STP Architecture (8 Labs)
+### Module 1: Layer 2 Switching & STP Architecture (8 Labs)
 Focuses on enterprise campus switching, trunk negotiation, loop prevention, and Spanning Tree hardening.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -54,7 +57,7 @@ Focuses on enterprise campus switching, trunk negotiation, loop prevention, and 
 
 ---
 
-### 🔷 Module 2: IP Connectivity & OSPF Routing (8 Labs)
+### Module 2: IP Connectivity & OSPF Routing (8 Labs)
 Focuses on route decision logic, administrative distance, and multi-area OSPF design.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -70,7 +73,7 @@ Focuses on route decision logic, administrative distance, and multi-area OSPF de
 
 ---
 
-### 🔷 Module 3: IP Services & High Availability (8 Labs)
+### Module 3: IP Services & High Availability (8 Labs)
 Focuses on NAT/PAT, First-Hop Redundancy Protocols, Access Control Lists, and Device Management.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -86,7 +89,7 @@ Focuses on NAT/PAT, First-Hop Redundancy Protocols, Access Control Lists, and De
 
 ---
 
-### 🔷 Module 4: Layer 2 & Infrastructure Security (5 Labs)
+### Module 4: Layer 2 & Infrastructure Security (5 Labs)
 Hardening campus networks against Layer 2 attacks and rogue devices.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -94,12 +97,12 @@ Hardening campus networks against Layer 2 attacks and rogue devices.
 | **4.1** | Port Security | Static, Dynamic & Sticky MACs, Violations (Protect, Restrict, Shutdown) | [View Lab](CCNA/Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%201%20–%20Port%20Security/README.md) |
 | **4.2** | DHCP Snooping | Trusted vs Untrusted Ports, DHCP Binding Database, Rate Limiting | [View Lab](CCNA/Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%202%20–%20DHCP%20Snooping/README.md) |
 | **4.3** | Dynamic ARP Inspection (DAI) | ARP Poisoning prevention, Snooping Binding Validation, ARP ACLs | [View Lab](CCNA/Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%203%20–%20Dynamic%20ARP%20Inspection/README.md) |
-| **4.4** | Control Plane & Device Hardening | Password encryption (Type 8/9), Login banners, CoPP, Service disabling | [View Lab](CCNA/Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%204%20–%20Device%20Hardening/README.md) |
+| **4.4** | Device Hardening | `enable secret`, `service password-encryption`, `login block-for` brute-force protection, login banner, disabling unused services | [View Lab](CCNA/Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%204%20–%20Device%20Hardening/README.md) |
 | **4.5** | AAA Security with RADIUS | Cisco IOS AAA New-Model, FreeRADIUS Docker Integration, Local Fallback | [View Lab](CCNA/Module%204%20–%20Layer%202%20and%20Device%20Security%20%28CCNA%29/Lab%205%20–%20AAA%20with%20RADIUS%20and%20Local%20Fallback/README.md) |
 
 ---
 
-### 🔷 Module 5: IPv6 Infrastructure (2 Labs)
+### Module 5: IPv6 Infrastructure (2 Labs)
 Deployment of native IPv6 addressing and dynamic routing.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -109,7 +112,7 @@ Deployment of native IPv6 addressing and dynamic routing.
 
 ---
 
-### 🔷 Module 7: Border Gateway Protocol (BGP - CCNP Level) (5 Labs)
+### Module 7: Border Gateway Protocol (BGP - CCNP Level) (5 Labs)
 Deep dive into enterprise exterior routing, iBGP/eBGP peering, and path manipulation.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
@@ -122,41 +125,43 @@ Deep dive into enterprise exterior routing, iBGP/eBGP peering, and path manipula
 
 ---
 
-## 🔬 Featured Troubleshooting Spotlights
+## Featured Troubleshooting Spotlights
 
 ### Spotlight 1: BGP Inbound vs. Outbound Path Control (Lab 7.4 & 7.5)
 * **Objective:** Control asymmetric traffic between autonomous systems.
 * **Mechanism:** 
   - Used `weight` (local to router) and `local-preference` (advertised across iBGP) to steer outbound campus flows.
   - Used `AS-Path Prepending` and `MED` outbound to influence how external AS upstream providers route return traffic.
-* **Fault Injection:** Inverted route-map direction (applying inbound instead of outbound); verified that external AS neighbors fell back to alternative transit links and diagnosed via `show ip bgp` and `debug ip bgp updates`.
+* **Fault Injection:** Applied a route-map in the wrong direction (Lab 7.5, inbound instead of outbound), so the neighbor never received the prepended path. Also edited route-maps (Lab 7.4 `local-preference` 200 → 300, Lab 7.5 prepend count) without refreshing the session; `show ip bgp` kept the old values until the policy was re-applied with a session reset (`clear ip bgp ... in/out`).
 
 ### Spotlight 2: Defense-in-Depth L2 Protection (Module 4)
 * **Objective:** Prevent rogue DHCP servers, ARP cache poisoning, and CAM table exhaustion attacks.
-* **Mechanism:** Co-deployed DHCP Snooping + Dynamic ARP Inspection (DAI) on trunk and access switches.
-* **Fault Injection:** Simulated an attacker attempting to answer DHCP DISCOVER requests with malicious gateways; validated switch dropped spoofed frames, incremented DAI error counters, and placed offending ports into `err-disabled`.
+* **Mechanism:** DHCP Snooping with trusted/untrusted ports, then Dynamic ARP Inspection (DAI) validating ARP against the snooping binding table.
+* **Fault Injection:** Started a rogue DHCP server on an untrusted port and confirmed its offers were dropped; configured a static IP on the attacker host and confirmed DAI dropped its ARP and logged `DHCP_SNOOPING_DENY`; removed trust from the uplink and observed legitimate DHCP and ARP replies being dropped too.
 
 ---
 
-## 🚀 Active Development Roadmap (`dev` Branch)
+## Roadmap (`dev` Branch)
 
-The following advanced CCNP ENCOR / ENARSI and enterprise modules are currently being built and validated on the [`dev`](https://github.com/thearith6/GNS3-Lab-CCNA/tree/dev) branch:
+The following labs and modules are being built on the [`dev`](https://github.com/thearith6/GNS3-Lab-CCNA/tree/dev) branch and will move to `main` once validated:
 
-- [ ] **Module 6:** Wireless LAN Architecture & Network Automation (RESTCONF / Ansible)
-- [ ] **Module 7 (Labs 6–10):** Advanced BGP (Communities, Route Filtering, BFD, Dual-ISP Multihoming)
-- [ ] **Module 8:** Advanced Routing (Mutual Route Redistribution, Route Tags, Policy-Based Routing, VRF-Lite)
-- [ ] **Module 9:** Enterprise VPN Technologies (GRE, Site-to-Site IPsec with IKEv2, DMVPN Phase 1 & 3)
-- [ ] **Module 10:** Infrastructure Services (PIM-SM Multicast, Flexible NetFlow, IP SLA)
-- [ ] **Module 11:** Carrier Access (PPPoE Server/Client, MTU/MSS clamping, Dual-WAN Failover)
-- [ ] **Module 12:** Data Center VXLAN (Underlay OSPF, Ingress Replication, BGP EVPN Control Plane, Symmetric IRB)
-- [ ] **Module 13:** Cisco SD-WAN (vBond, vSmart, vManage bring-up, Service VPNs, OMP, Application-Aware Routing)
-- [ ] **Module 14:** Enterprise NOC Monitoring (SNMP & Syslog telemetry collection with Zabbix)
+- **Module 3 (Lab 9):** QoS: Classification, Marking and Priority Queueing
+- **Module 6:** Wireless LAN Architecture & Network Automation (RESTCONF / Ansible)
+- **Module 7 (Labs 6–10):** Advanced BGP (Communities, Route Filtering, BFD, Dual-ISP Multihoming)
+- **Module 8:** Advanced Routing (Mutual Route Redistribution, Route Tags, Policy-Based Routing, VRF-Lite)
+- **Module 9:** Enterprise VPN Technologies (GRE, Site-to-Site IPsec with IKEv2, DMVPN Phase 1 & 3)
+- **Module 10:** Infrastructure Services (PIM-SM Multicast, Flexible NetFlow, IP SLA)
+- **Module 11:** Carrier Access (PPPoE Server/Client, MTU/MSS clamping, Dual-WAN Failover)
+- **Module 12:** Data Center VXLAN (Underlay OSPF, Ingress Replication, BGP EVPN Control Plane, Symmetric IRB)
+- **Module 13:** Cisco SD-WAN (vBond, vSmart, vManage bring-up, Service VPNs, OMP, Application-Aware Routing)
+- **Module 14:** Enterprise NOC Monitoring (SNMP & Syslog telemetry collection with Zabbix)
 
 ---
 
-## 👨‍💻 Author & Contact
+## About the Author
 
-**Thearith**  
-*Network Engineer & Infrastructure Enthusiast*  
-- **GitHub:** [@thearith6](https://github.com/thearith6)  
-- **Focus:** Enterprise Campus & Data Center Networking, BGP/OSPF Routing, Network Automation
+**Thearith** — building hands-on enterprise networking skills toward CCNP Enterprise (ENCOR).
+
+I built these labs in GNS3 to practice routing, switching and security, and to document how things break and how to fix them. Every lab includes a fault I injected on purpose.
+
+- **GitHub:** [@thearith6](https://github.com/thearith6)

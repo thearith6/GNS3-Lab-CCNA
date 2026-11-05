@@ -1,9 +1,5 @@
 # Enterprise Network Engineering Labs (CCNA & CCNP ENCOR)
 
-[![Labs Completed](https://img.shields.io/badge/Completed%20Labs-36%20Verified-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Lab-CCNA)
-[![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
-[![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/GNS3-Lab-CCNA)
-
 > 💡 **Looking for the main repository overview?** Check out the [Main Portfolio README](../README.md).
 
 ---
