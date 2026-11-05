@@ -1,7 +1,7 @@
-# Cisco Enterprise Network Engineering Lab Portfolio
-### Practical Implementations, Protocol Deep-Dives & Fault-Injection Troubleshooting
+# Cisco Networking Labs (CCNA → CCNP)
+### Switching, Routing, Security and BGP Practice Labs with Fault-Injection Exercises
 
-[![Labs Completed](https://img.shields.io/badge/Completed%20Labs-36%20Verified-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Lab-CCNA)
+[![Labs Completed](https://img.shields.io/badge/Labs-36-success?style=for-the-badge&logo=cisco)](https://github.com/thearith6/GNS3-Lab-CCNA)
 [![Platform](https://img.shields.io/badge/Platform-GNS3%20v3.1-blue?style=for-the-badge&logo=gnometerminal)](https://www.gns3.com/)
 [![Images](https://img.shields.io/badge/Appliances-Cisco%20IOL%2017.18.2%20%7C%20Docker-orange?style=for-the-badge)](https://github.com/thearith6/GNS3-Lab-CCNA)
 [![Methodology](https://img.shields.io/badge/Testing-Fault%20Injection%20%26%20Root--Cause-purple?style=for-the-badge)](https://github.com/thearith6/GNS3-Lab-CCNA)
@@ -10,14 +10,14 @@
 
 ## Summary
 
-This repository documents hands-on network topologies, configurations, protocol analyses, and troubleshooting scenarios designed for enterprise architectures (covering **CCNA** through **CCNP Enterprise ENCOR / ENARSI** concepts).
+This repository documents my hands-on GNS3 labs: topologies, configurations, verification and troubleshooting. It mainly covers **CCNA** topics, plus CCNP-level BGP, as I work toward **CCNP Enterprise (ENCOR / ENARSI)**.
 
-Unlike theoretical configurations, **every completed lab in this repository includes:**
-1. **Realistic enterprise-style topologies** built and tested in GNS3.
+Each lab in this repository includes:
+1. **A topology** built and tested in GNS3.
 2. **Device configurations** with a documented IP addressing scheme.
-3. **Show-command verification** with real CLI output and screenshots.
+3. **Show-command verification** with CLI output and screenshots.
 
-**Most labs also include a "Break-It" / fault-injection exercise:** a deliberate misconfiguration (e.g., a rogue DHCP server, a rogue root bridge with priority 0, a missing `ip helper-address`, a BGP policy edited without a session refresh) with a screenshot of the symptom and the fix.
+**Each lab also includes a "Break-It" / fault-injection exercise:** a deliberate misconfiguration (e.g., a rogue DHCP server, a rogue root bridge with priority 0, a missing `ip helper-address`, a BGP policy edited without a session refresh) with a screenshot of the symptom and the fix.
 
 ---
 
@@ -37,9 +37,9 @@ All topologies are built and tested on the same virtualized setup:
 
 ---
 
-## Portfolio Lab Matrix (36 Fully Validated Labs)
+## Lab Matrix (36 Labs)
 
-The `main` branch maintains only **100% completed, fully validated labs** with zero broken dependencies.
+The `main` branch contains the completed labs. Labs still in progress live on the `dev` branch.
 
 ### Module 1: Layer 2 Switching & STP Architecture (8 Labs)
 Focuses on enterprise campus switching, trunk negotiation, loop prevention, and Spanning Tree hardening.
@@ -113,7 +113,7 @@ Deployment of native IPv6 addressing and dynamic routing.
 ---
 
 ### Module 7: Border Gateway Protocol (BGP - CCNP Level) (5 Labs)
-Deep dive into enterprise exterior routing, iBGP/eBGP peering, and path manipulation.
+BGP labs on eBGP/iBGP peering, route reflectors, and path selection.
 
 | Lab | Title | Key Protocols / Technologies | Documentation |
 | :---: | :--- | :--- | :---: |
@@ -134,8 +134,8 @@ Deep dive into enterprise exterior routing, iBGP/eBGP peering, and path manipula
   - Used `AS-Path Prepending` and `MED` outbound to influence how external AS upstream providers route return traffic.
 * **Fault Injection:** Applied a route-map in the wrong direction (Lab 7.5, inbound instead of outbound), so the neighbor never received the prepended path. Also edited route-maps (Lab 7.4 `local-preference` 200 → 300, Lab 7.5 prepend count) without refreshing the session; `show ip bgp` kept the old values until the policy was re-applied with a session reset (`clear ip bgp ... in/out`).
 
-### Spotlight 2: Defense-in-Depth L2 Protection (Module 4)
-* **Objective:** Prevent rogue DHCP servers, ARP cache poisoning, and CAM table exhaustion attacks.
+### Spotlight 2: Layer 2 Protection (Module 4)
+* **Objective:** Block rogue DHCP servers and ARP cache poisoning.
 * **Mechanism:** DHCP Snooping with trusted/untrusted ports, then Dynamic ARP Inspection (DAI) validating ARP against the snooping binding table.
 * **Fault Injection:** Started a rogue DHCP server on an untrusted port and confirmed its offers were dropped; configured a static IP on the attacker host and confirmed DAI dropped its ARP and logged `DHCP_SNOOPING_DENY`; removed trust from the uplink and observed legitimate DHCP and ARP replies being dropped too.
 
