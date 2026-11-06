@@ -1,47 +1,40 @@
 # FortiGate Labs
-### Hands-on FortiGate (FortiOS) practice in GNS3, with fault-injection exercises
+### FortiGate (FortiOS) practice labs in GNS3, each with a fault-injection exercise
 
-For the other labs in this repository, see the [main README](../README.md) and [CCNA](../CCNA/README.md).
+Part of the [GNS3 labs repository](../README.md).
 
 ---
 
 ## Summary
 
-This folder documents my FortiGate practice labs: topologies, CLI configuration, verification and troubleshooting. Each lab follows the same layout as the CCNA labs:
-
-1. **A topology** built and tested in GNS3.
-2. **FortiOS configuration** with a documented IP addressing scheme.
-3. **Verification** with CLI output and screenshots.
-4. **A "Break-It" exercise:** a deliberate misconfiguration, the symptom, and the fix.
+My FortiGate labs, built and tested in GNS3. Each lab has the topology, the FortiOS config with its addressing plan, verification output with screenshots, and a "Break-It" exercise: something I broke on purpose, the symptom it caused, and how I fixed it.
 
 ## Lab Environment
 
 | Component | Specification | Purpose |
 | :--- | :--- | :--- |
-| **Network Emulator** | GNS3 Server / Client v3.1 | Topology orchestration |
-| **Firewall** | FortiGate-VM (QEMU appliance), FortiOS version: _fill in_ | Policies, NAT, VPN, UTM |
-| **Switching / Routing** | Cisco IOL (L2 / L3) | Upstream and downstream devices |
-| **End Systems** | VPCS & Alpine Linux (`alpine-ssh:latest`) | Connectivity and service testing |
+| **Network Emulator** | GNS3 Server / Client v3.1 | Topology |
+| **Firewall** | FortiGate-VM (QEMU), FortiOS 7.4.7 | Policies, NAT, VPN, security profiles |
+| **Switching / Routing** | Cisco IOL (L2 / L3) | Devices around the firewall |
+| **End Systems** | VPCS, Alpine Linux (`alpine-ssh:latest`) | Connectivity and service tests |
 
-> FortiGate images and licenses are **not** stored in this repository (see `.gitignore`).
+FortiGate images and licenses are not included in this repo.
 
 ---
 
-## Lab Matrix
-
-Labs are added here as they are completed. Planned topics are in the [Roadmap](#roadmap).
+## Labs
 
 ### Module 1: Fundamentals
 
 | Lab | Title | Key Technologies | Documentation |
 | :---: | :--- | :--- | :---: |
-| _none yet_ | | | |
+| **1.1** | Interfaces, Static Routing & Firewall Policy _(draft)_ | Interfaces, static default route, firewall policy, source NAT | [View Lab](Module%201%20%E2%80%93%20Fundamentals/Lab%201%20%E2%80%93%20Interfaces%2C%20Static%20Routing%20and%20Firewall%20Policy/README.md) |
 
 ---
 
-## Roadmap
+## Planned
 
-- **Module 1: Fundamentals** (first boot and management access, interfaces and zones, static routing, firewall policy, SNAT/VIP)
+- **Module 1: Fundamentals** (address/service objects, SNAT and VIPs)
 - **Module 2: Security profiles** (web filter, application control, antivirus, SSL inspection)
 - **Module 3: VPN** (IPsec site-to-site, SSL VPN / ZTNA)
 - **Module 4: Routing & HA** (OSPF, BGP, SD-WAN, FGCP HA)

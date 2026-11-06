@@ -2,11 +2,9 @@
 
 ## Planned Labs
 
-- Lab 1 – First Boot, Management Access and Interfaces
-- Lab 2 – Static Routing and Firewall Policy
+- Lab 2 – Address Objects, Service Objects and Schedules
 - Lab 3 – Source NAT and Virtual IPs (DNAT)
-- Lab 4 – Address Objects, Service Objects and Schedules
 
 ## Labs
 
-_Links to completed labs are added here._
+- [Lab 1 – Interfaces, Static Routing and Firewall Policy](Lab%201%20%E2%80%93%20Interfaces%2C%20Static%20Routing%20and%20Firewall%20Policy/README.md) (draft)
